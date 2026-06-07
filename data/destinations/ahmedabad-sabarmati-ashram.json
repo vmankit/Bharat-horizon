@@ -1,0 +1,70 @@
+{
+  "id": "ahmedabad-sabarmati-ashram",
+  "name": "Ahmedabad Sabarmati Ashram",
+  "stateId": "gujarat",
+  "stateName": "Gujarat",
+  "vibe": "An iconic highlight in Gujarat presenting amazing desert, wildlife, heritage, spiritual coast vibes.",
+  "whyVisit": "Ahmedabad Sabarmati Ashram is a must-visit spot in Gujarat for its unparalleled charm, historical significance, and scenic backdrop. It stands as a testimony to the state's vibrant cultural landscape and is a major draw for tourists seeking an authentic travel experience.",
+  "topThingsToDo": [
+    "Take a guided tour to discover the rich history, architecture, and hidden stories of this landmark.",
+    "Capture stunning panoramic views during sunrise or golden hour for travel memories and photography.",
+    "Explore the nearby local market lanes, tasting street food and shopping for local artisan handicrafts."
+  ],
+  "bestSeason": "October to March (pleasant weather and comfortable sightseeing temperatures)",
+  "budgetTripIdea": "Save money by using public transport (metro, shared autos, or local buses) to reach Ahmedabad Sabarmati Ashram. Purchase entry tickets online in advance, and dine at highly-rated local dhabas nearby rather than tourist-focused restaurants.",
+  "travelAngles": {
+    "family": "Perfect for families. It offers educational walks, child-friendly spaces, and safe surroundings for a memorable day out.",
+    "solo": "An enriching destination for solo wanderers. Highly safe, easy to navigate, and filled with opportunities to meet fellow travelers.",
+    "couple": "Offers a romantic backdrop for couples. The beautiful architecture, scenic walkways, and beautiful sunsets create a magical atmosphere."
+  },
+  "howToReach": "Easily accessible from Gandhinagar via local taxis, buses, or trains. The nearest transport hub is less than 45 minutes away.",
+  "whereToStay": {
+    "luxury": "Heritage Palace Resort (near Ahmedabad Sabarmati Ashram) - Grand suites, royal hospitality, fine dining.",
+    "midRange": "Ahmedabad Sabarmati Ashram Horizon Inn - Clean, comfortable AC rooms, free Wi-Fi, helpful staff.",
+    "budget": "Travelers Haven Hostel - Backpacker dorms, shared lounge, vibrant community vibe."
+  },
+  "whatToEat": [
+    "Gujarat Signature Dish",
+    "Masala Delight",
+    "Traditional Regional Beverages (Lassi/Kahwa/Spiced Tea)"
+  ],
+  "nearbyDestinations": [
+    {
+      "name": "Bhuj Aina Mahal",
+      "slug": "bhuj-aina-mahal"
+    },
+    {
+      "name": "Dwarka Dwarkadhish Temple",
+      "slug": "dwarka-dwarkadhish-temple"
+    }
+  ],
+  "sampleItinerary": [
+    {
+      "time": "08:30 AM",
+      "activity": "Arrive early to beat the crowd, get a local guide, and explore Ahmedabad Sabarmati Ashram's inner chambers."
+    },
+    {
+      "time": "11:30 AM",
+      "activity": "Visit the on-site museum and photography points around the main gardens."
+    },
+    {
+      "time": "01:00 PM",
+      "activity": "Lunch at a traditional eatery nearby, trying local specials."
+    },
+    {
+      "time": "03:00 PM",
+      "activity": "Explore the nearby craft bazaar, picking up souvenirs native to Gujarat."
+    },
+    {
+      "time": "05:30 PM",
+      "activity": "Watch the sunset from a panoramic viewpoint overlooking the area, followed by the light and sound show."
+    }
+  ],
+  "imagePlaceholder": {
+    "title": "Ahmedabad Sabarmati Ashram",
+    "description": "Explore the scenic beauty of Ahmedabad Sabarmati Ashram in Gujarat",
+    "bgColor": "#0b132b",
+    "accentColor": "#d4af37",
+    "text": "A"
+  }
+}

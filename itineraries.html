@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Travel Itineraries | Bharat Horizon</title>
+    <meta name="description" content="Discover detailed 2-day, 3-day, and 5-day itineraries for traveling in India. Optimize your routes and sightseeing times.">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header></header>
+
+    <main>
+        
+        <!-- Header Banner -->
+        <section class="section-wrapper" style="padding: 60px 0 30px 0; background: rgba(255,255,255,0.01); border-bottom: 1px solid rgba(255,255,255,0.03);">
+            <div class="container" style="text-align: center;">
+                <span style="font-size:0.85rem; background:rgba(212,175,55,0.15); color:var(--color-gold); padding:4px 12px; border-radius:30px; font-weight:700; text-transform:uppercase; letter-spacing:1px; display:inline-block; margin-bottom:15px;">
+                    Tour Planners
+                </span>
+                <h1 style="font-size: 3rem; margin-bottom: 15px; text-transform: uppercase;">Suggested <span>Itineraries</span></h1>
+                <p style="color: var(--color-text-muted); max-width: 700px; margin: 0 auto; font-size: 1.1rem;">Get hand-tailored, detailed timelines to make your Indian exploration efficient, structured, and thoroughly enjoyable.</p>
+            </div>
+        </section>
+
+        <!-- Itineraries Grid Selection -->
+        <section class="container" style="padding: 50px 0;">
+            <div style="display:flex; justify-content:center; gap:12px; margin-bottom:45px;">
+                <button class="map-filter-tab active" id="btn-all">All Durations</button>
+                <button class="map-filter-tab" id="btn-2">2 Days (Weekend)</button>
+                <button class="map-filter-tab" id="btn-3">3 Days (Short Trip)</button>
+                <button class="map-filter-tab" id="btn-5">5 Days (Grand Tour)</button>
+            </div>
+
+            <div id="itineraries-grid" style="display:flex; flex-direction:column; gap:40px;">
+                
+                <!-- 2 Day card -->
+                <div class="glass-panel card-item-itinerary" data-days="2" style="padding:40px; display:grid; grid-template-columns: 1fr 2fr; gap:30px; align-items:start;">
+                    <div>
+                        <span style="font-size:0.85rem; background:rgba(212,175,55,0.15); color:var(--color-gold); padding:4px 12px; border-radius:30px; font-weight:700;">2 DAYS</span>
+                        <h3 style="font-size:1.8rem; margin:15px 0 10px 0; color:var(--color-gold);">Weekend City Break</h3>
+                        <p style="font-size:0.95rem; color:var(--color-text-muted); line-height:1.6; margin-bottom:20px;">Designed for quick getaways. Explore the city centers, major historical landmarks, and local dining hubs without rushing.</p>
+                        <strong style="font-size:0.85rem; text-transform:uppercase; color:var(--color-text-main);">Perfect for:</strong>
+                        <p style="font-size:0.9rem; color:var(--color-gold); margin-top:4px;">Delhi, Chandigarh, Puducherry, Bangalore weekenders.</p>
+                    </div>
+                    <div>
+                        <h4 style="font-size:1.2rem; margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:8px;">Schedule Highlights</h4>
+                        <div class="timeline" style="padding-left:20px;">
+                            <div style="position:relative; margin-bottom:20px;">
+                                <strong style="color:var(--color-gold);">Day 1: Central Heritage &amp; Culture</strong>
+                                <p style="font-size:0.9rem; color:var(--color-text-muted); margin-top:3px;">Check into a heritage stay, take a guided tour of the primary fort or palace complex, and enjoy traditional dishes in the local bazaar.</p>
+                            </div>
+                            <div style="position:relative;">
+                                <strong style="color:var(--color-gold);">Day 2: Nature Spots, Shopping &amp; Departure</strong>
+                                <p style="font-size:0.9rem; color:var(--color-text-muted); margin-top:3px;">Visit botanical gardens, art galleries, and explore handicraft stores for souvenirs before catching an evening flight.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 Day card -->
+                <div class="glass-panel card-item-itinerary" data-days="3" style="padding:40px; display:grid; grid-template-columns: 1fr 2fr; gap:30px; align-items:start;">
+                    <div>
+                        <span style="font-size:0.85rem; background:rgba(0,180,216,0.15); color:var(--color-accent-blue); padding:4px 12px; border-radius:30px; font-weight:700;">3 DAYS</span>
+                        <h3 style="font-size:1.8rem; margin:15px 0 10px 0; color:var(--color-gold);">Extended Explorer</h3>
+                        <p style="font-size:0.95rem; color:var(--color-text-muted); line-height:1.6; margin-bottom:20px;">Deep dive into local traditions. Perfect for exploring natural wonders like hill stations, desert sands, or beach sanctuaries.</p>
+                        <strong style="font-size:0.85rem; text-transform:uppercase; color:var(--color-text-main);">Perfect for:</strong>
+                        <p style="font-size:0.9rem; color:var(--color-gold); margin-top:4px;">Goa beaches, Jaipur forts, Munnar tea gardens, Rishikesh rafting.</p>
+                    </div>
+                    <div>
+                        <h4 style="font-size:1.2rem; margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:8px;">Schedule Highlights</h4>
+                        <div class="timeline" style="padding-left:20px;">
+                            <div style="position:relative; margin-bottom:15px;">
+                                <strong style="color:var(--color-gold);">Day 1: Historic Hub &amp; Orientation</strong>
+                                <p style="font-size:0.9rem; color:var(--color-text-muted); margin-top:3px;">Walk through ancient markets, visit three central historical monuments, and taste regional street food.</p>
+                            </div>
+                            <div style="position:relative; margin-bottom:15px;">
+                                <strong style="color:var(--color-gold);">Day 2: Wilderness / Scenic Day Hike</strong>
+                                <p style="font-size:0.9rem; color:var(--color-text-muted); margin-top:3px;">Take an excursion to the nearest waterfall, scenic lake viewpoint, or spice plantation. Watch a traditional evening dance.</p>
+                            </div>
+                            <div style="position:relative;">
+                                <strong style="color:var(--color-gold);">Day 3: Handicrafts &amp; Leisure Departure</strong>
+                                <p style="font-size:0.9rem; color:var(--color-text-muted); margin-top:3px;">Shop at artisan silk/clay cooperatives, enjoy a relaxed cafe lunch, and transfer to airport/station.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5 Day card -->
+                <div class="glass-panel card-item-itinerary" data-days="5" style="padding:40px; display:grid; grid-template-columns: 1fr 2fr; gap:30px; align-items:start;">
+                    <div>
+                        <span style="font-size:0.85rem; background:rgba(212,175,55,0.15); color:var(--color-gold); padding:4px 12px; border-radius:30px; font-weight:700;">5 DAYS</span>
+                        <h3 style="font-size:1.8rem; margin:15px 0 10px 0; color:var(--color-gold);">Grand Tour Experience</h3>
+                        <p style="font-size:0.95rem; color:var(--color-text-muted); line-height:1.6; margin-bottom:20px;">Our most complete road trip guide. Covers historical capitals, national wildlife parks, rural communities, and wellness resorts.</p>
+                        <strong style="font-size:0.85rem; text-transform:uppercase; color:var(--color-text-main);">Perfect for:</strong>
+                        <p style="font-size:0.9rem; color:var(--color-gold); margin-top:4px;">Kerala backwaters, Ladakh desert road trips, Uttarakhand temple tours.</p>
+                    </div>
+                    <div>
+                        <h4 style="font-size:1.2rem; margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:8px;">Schedule Highlights</h4>
+                        <div class="timeline" style="padding-left:20px;">
+                            <div style="position:relative; margin-bottom:15px;">
+                                <strong style="color:var(--color-gold);">Day 1-2: State Capital Sights &amp; Fine Dining</strong>
+                                <p style="font-size:0.9rem; color:var(--color-text-muted); margin-top:3px;">Tour royal palaces, museums, and historical quarters. Dine at award-winning restaurants.</p>
+                            </div>
+                            <div style="position:relative; margin-bottom:15px;">
+                                <strong style="color:var(--color-gold);">Day 3: National Park Safari &amp; Nature Trek</strong>
+                                <p style="font-size:0.9rem; color:var(--color-text-muted); margin-top:3px;">Wake up early for a guided tiger reserve safari or bird-watching hike. Rest at an eco-lodge.</p>
+                            </div>
+                            <div style="position:relative; margin-bottom:15px;">
+                                <strong style="color:var(--color-gold);">Day 4: Rural Village Walk &amp; Culinary Feast</strong>
+                                <p style="font-size:0.9rem; color:var(--color-text-muted); margin-top:3px;">Walk through crop farms, experience weaving/pottery, and eat an organic farm lunch.</p>
+                            </div>
+                            <div style="position:relative;">
+                                <strong style="color:var(--color-gold);">Day 5: Souvenirs Shopping &amp; Departure</strong>
+                                <p style="font-size:0.9rem; color:var(--color-text-muted); margin-top:3px;">Buy spices, handlooms, or silver items, pack bags, and take an aviation transfer home.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer recommendation panel -->
+            <div class="glass-panel" style="padding:40px; margin-top:50px; text-align:center; background:radial-gradient(circle, rgba(212,175,55,0.05) 0%, rgba(5,10,24,0.1) 100%);">
+                <h3 style="font-size:1.5rem; color:var(--color-gold); margin-bottom:15px;">Want a Customized State Itinerary?</h3>
+                <p style="color:var(--color-text-muted); max-width:600px; margin:0 auto 25px auto; font-size:0.95rem;">Select any Indian state from our exploration page to fetch its specific 2-day, 3-day, and 5-day itineraries dynamically.</p>
+                <a href="explore.html" class="btn btn-primary">Find State Itineraries</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer></footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const btnAll = document.getElementById("btn-all");
+            const btn2 = document.getElementById("btn-2");
+            const btn3 = document.getElementById("btn-3");
+            const btn5 = document.getElementById("btn-5");
+            const cards = document.querySelectorAll(".card-item-itinerary");
+            
+            const filterGrid = (days) => {
+                cards.forEach(c => {
+                    if (days === "all" || c.getAttribute("data-days") === days) {
+                        c.style.display = "grid";
+                    } else {
+                        c.style.display = "none";
+                    }
+                });
+            };
+
+            btnAll.addEventListener("click", () => {
+                [btnAll, btn2, btn3, btn5].forEach(b => b.classList.remove("active"));
+                btnAll.classList.add("active");
+                filterGrid("all");
+            });
+
+            btn2.addEventListener("click", () => {
+                [btnAll, btn2, btn3, btn5].forEach(b => b.classList.remove("active"));
+                btn2.classList.add("active");
+                filterGrid("2");
+            });
+
+            btn3.addEventListener("click", () => {
+                [btnAll, btn2, btn3, btn5].forEach(b => b.classList.remove("active"));
+                btn3.classList.add("active");
+                filterGrid("3");
+            });
+
+            btn5.addEventListener("click", () => {
+                [btnAll, btn2, btn3, btn5].forEach(b => b.classList.remove("active"));
+                btn5.classList.add("active");
+                filterGrid("5");
+            });
+            
+            // Check for url param to auto filter
+            const urlParams = new URLSearchParams(window.location.search);
+            const duration = urlParams.get("duration");
+            if (duration === "2") btn2.click();
+            if (duration === "3") btn3.click();
+            if (duration === "5") btn5.click();
+        });
+    </script>
+</body>
+</html>

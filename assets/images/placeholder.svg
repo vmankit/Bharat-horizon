@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <!-- Definitions for gradients and drop shadows -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050a18" />
+      <stop offset="50%" stop-color="#0b132b" />
+      <stop offset="100%" stop-color="#142244" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a48117" />
+      <stop offset="50%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#f3cd57" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)" />
+
+  <!-- Dynamic Radial Grid Pattern representing navigation grid lines -->
+  <circle cx="400" cy="250" r="300" fill="none" stroke="#d4af37" stroke-opacity="0.04" stroke-width="1" />
+  <circle cx="400" cy="250" r="200" fill="none" stroke="#d4af37" stroke-opacity="0.05" stroke-width="1.5" />
+  <circle cx="400" cy="250" r="100" fill="none" stroke="#d4af37" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="5 5" />
+  
+  <!-- Compass/Horizon Lines -->
+  <line x1="400" y1="50" x2="400" y2="450" stroke="#d4af37" stroke-opacity="0.05" stroke-width="1" />
+  <line x1="100" y1="250" x2="700" y2="250" stroke="#d4af37" stroke-opacity="0.05" stroke-width="1" />
+  
+  <!-- Diagonal Flight Path Lines -->
+  <path d="M 150 400 Q 400 100 650 400" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-opacity="0.3" stroke-dasharray="6 4" />
+  <path d="M 200 420 Q 400 180 600 420" fill="none" stroke="#00b4d8" stroke-width="1" stroke-opacity="0.4" />
+
+  <!-- Styled Mountain Silhouettes representing travel destinations -->
+  <polygon points="150,500 300,300 450,500" fill="#091022" opacity="0.8" stroke="#d4af37" stroke-opacity="0.08" stroke-width="1" />
+  <polygon points="350,500 500,220 650,500" fill="#070c1b" opacity="0.9" stroke="#d4af37" stroke-opacity="0.1" stroke-width="1" />
+  
+  <!-- Glowing Sun -->
+  <circle cx="400" cy="250" r="35" fill="url(#goldGrad)" opacity="0.85" />
+  
+  <!-- Brand Seal/Logo Overlay -->
+  <g transform="translate(400, 250)">
+    <!-- Inner Compass Rose -->
+    <path d="M 0,-15 L 4,-4 L 15,0 L 4,4 L 0,15 L -4,4 L -15,0 L -4,-4 Z" fill="#050a18" stroke="url(#goldGrad)" stroke-width="1.5" />
+  </g>
+
+  <!-- Title & Branding -->
+  <text x="400" y="340" font-family="'Cinzel', 'Playfair Display', serif" font-size="28" fill="#ffffff" letter-spacing="6" text-anchor="middle" font-weight="bold">
+    BHARAT HORIZON
+  </text>
+  <text x="400" y="375" font-family="'Inter', sans-serif" font-size="14" fill="#d4af37" letter-spacing="3" text-anchor="middle" font-weight="500">
+    EXPLORE THE SOUL OF INDIA
+  </text>
+
+  <!-- Border Frame -->
+  <rect x="20" y="20" width="760" height="460" fill="none" stroke="url(#goldGrad)" stroke-width="1" stroke-opacity="0.2" />
+</svg>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Indian States &amp; UTs | Bharat Horizon Map &amp; Region Portal</title>
+    <meta name="description" content="Explore India by region using our flight network constellation map. Filter across 36 states and union territories, search travel styles, and discover popular destinations.">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+    <!-- Header Section (Dynamic) -->
+    <header class="scrolled">
+    <div class="container nav-container">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M21,16V14L13,9V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V9L2,14V16L10,13.5V19L8,20.5V22L11.5,21L15,22V20.5L13,19V13.5L21,16Z"/>
+                </svg>
+            </div>
+            <span class="logo-text">Bharat Horizon</span>
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore India</a></li>
+            <li><a href="diaries.html">Travel Diaries</a></li>
+            <li><a href="itineraries.html">Itineraries</a></li>
+            <li><a href="food-culture.html">Food &amp; Culture</a></li>
+            <li><a href="best-time.html">Best Seasons</a></li>
+            <li><a href="tips.html">Travel Tips</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="nav-cta">Plan Trip</a></li>
+        </ul>
+    </div>
+    </header>
+
+    <main>
+        
+        <!-- Explore Banner Header -->
+        <section class="section-wrapper" style="padding: 60px 0 30px 0; background: rgba(255,255,255,0.01); border-bottom: 1px solid rgba(255,255,255,0.03);">
+            <div class="container" style="text-align: center;">
+                <h1 style="font-size: 3rem; margin-bottom: 15px; text-transform: uppercase;">Explore <span>India Portal</span></h1>
+                <p style="color: var(--color-text-muted); max-width: 700px; margin: 0 auto 30px auto; font-size: 1.1rem;">Use the interactive flight network map or regional tabs to search and browse the detailed travel diaries of all 36 Indian states and union territories.</p>
+                
+                <!-- Region Selector Tabs -->
+                <div class="map-filter-tabs" style="margin-bottom:0;">
+                    <div class="map-filter-tab active" data-region="All">All Regions</div>
+                    <div class="map-filter-tab" data-region="North">North</div>
+                    <div class="map-filter-tab" data-region="North East">North East</div>
+                    <div class="map-filter-tab" data-region="East">East</div>
+                    <div class="map-filter-tab" data-region="Central">Central</div>
+                    <div class="map-filter-tab" data-region="West">West</div>
+                    <div class="map-filter-tab" data-region="South">South</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map & Search Content Section -->
+        <section class="container" style="padding: 50px 0;">
+            <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: start;">
+                
+                <!-- Interactive Constellation Map -->
+                <div class="map-widget-container" style="padding:30px;">
+                    <div style="display:flex; justify-content:space-between; margin-bottom:20px; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:12px;">
+                        <h3 style="font-size:1.3rem; color:var(--color-gold); font-family:var(--font-heading); margin-bottom:0;">Interactive Constellation Map</h3>
+                        <span style="font-size:0.8rem; background:rgba(0,180,216,0.15); color:var(--color-accent-blue); padding:3px 10px; border-radius:4px; font-weight:600; text-transform:uppercase;">Flight Nodes</span>
+                    </div>
+                    
+                    <!-- Embedded SVG Map -->
+                    <object data="assets/images/map-india.svg" type="image/svg+xml" class="map-svg-element" id="india-constellation-map-obj" style="height:600px; pointer-events:auto;"></object>
+                    
+                    <div style="font-size:0.85rem; text-align:center; color:var(--color-text-muted); margin-top:20px; line-height:1.5;">
+                        Hover on stars to inspect flight hubs. Click nodes to navigate directly to the state guides.
+                    </div>
+                </div>
+
+                <!-- Interactive Search and State List -->
+                <div class="glass-panel" style="padding: 30px; height: 720px; display: flex; flex-direction: column;">
+                    <h3 style="font-size:1.4rem; color:var(--color-gold); margin-bottom:20px;">Search States &amp; UTs</h3>
+                    
+                    <!-- Inner Search Bar -->
+                    <div class="hero-search-wrapper" style="max-width:100%; margin-bottom:25px;">
+                        <div class="hero-search-bar" style="background:rgba(255,255,255,0.02); padding:4px 4px 4px 15px;">
+                            <svg viewBox="0 0 24 24" style="width:18px; height:18px; margin-right:10px;"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/></svg>
+                            <input type="text" id="state-search-box" placeholder="Type to filter states... (e.g. Goa, Uttar, beaches)" aria-label="Filter states">
+                        </div>
+                    </div>
+
+                    <!-- Scrollable State List Grid -->
+                    <div id="state-list-scrollable" style="flex-grow:1; overflow-y:auto; display:flex; flex-direction:column; gap:12px; padding-right:10px;">
+                        <!-- Populate dynamically with states JS -->
+                        <div style="text-align:center; padding: 40px 0; color:var(--color-text-muted);">
+                            Loading India travel directory...
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M21,16V14L13,9V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V9L2,14V16L10,13.5V19L8,20.5V22L11.5,21L15,22V20.5L13,19V13.5L21,16Z"/>
+                        </svg>
+                    </div>
+                    <span class="logo-text">Bharat Horizon</span>
+                </a>
+                <p>Discover India's soul. An aviation-inspired premium travel diary and destination guide, carefully highlighting regional wonders, culinary routes, and pristine hidden getaways across 36 states and union territories.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore Regions</h4>
+                <ul>
+                    <li><a href="explore.html?region=North">North Region</a></li>
+                    <li><a href="explore.html?region=North East">North East Region</a></li>
+                    <li><a href="explore.html?region=East">East Region</a></li>
+                    <li><a href="explore.html?region=Central">Central Region</a></li>
+                    <li><a href="explore.html?region=West">West Region</a></li>
+                    <li><a href="explore.html?region=South">South Region</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="diaries.html">Travel Blogs</a></li>
+                    <li><a href="itineraries.html">Itineraries</a></li>
+                    <li><a href="best-time.html">Best Seasons</a></li>
+                    <li><a href="tips.html">Gear &amp; Tips</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Inspired</h4>
+                <p>Subscribe to receive curated luxury travel diaries and flight itineraries monthly.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                    <input type="email" placeholder="Your email address" required aria-label="Email address">
+                    <button type="submit" aria-label="Subscribe">
+                        <svg viewBox="0 0 24 24"><path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bharat Horizon. All rights reserved. Crafted for explorers.</p>
+            <div class="footer-bottom-links">
+                <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/map.js"></script>
+    <script>
+        // Local list helper logic to render state rows dynamically
+        document.addEventListener("DOMContentLoaded", () => {
+            renderStateList();
+        });
+
+        async function renderStateList() {
+            const listEl = document.getElementById("state-list-scrollable");
+            const searchBox = document.getElementById("state-search-box");
+            const filterTabs = document.querySelectorAll(".map-filter-tab");
+            
+            let allStates = [];
+            try {
+                const response = await fetch("data/states.json");
+                allStates = await response.json();
+            } catch (e) {
+                listEl.innerHTML = `<div style="color:red; text-align:center; padding:20px;">Failed to load travel catalog.</div>`;
+                return;
+            }
+
+            let currentRegion = "All";
+            let currentQuery = "";
+
+            const filterAndRender = () => {
+                let filtered = allStates;
+                
+                // Filter by region tab
+                if (currentRegion !== "All") {
+                    filtered = filtered.filter(s => s.region.trim() === currentRegion.trim());
+                }
+
+                // Filter by search query
+                if (currentQuery) {
+                    filtered = filtered.filter(s => 
+                        s.name.toLowerCase().includes(currentQuery) ||
+                        s.capital.toLowerCase().includes(currentQuery) ||
+                        s.style.toLowerCase().includes(currentQuery)
+                    );
+                }
+
+                if (filtered.length === 0) {
+                    listEl.innerHTML = `<div style="text-align:center; padding:40px; color:var(--color-text-muted);">No matching destinations found.</div>`;
+                    return;
+                }
+
+                listEl.innerHTML = filtered.map(s => `
+                    <div style="border: 1px solid var(--color-border); border-radius: 8px; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.01); cursor:pointer; transition:var(--transition-smooth);" 
+                         onclick="window.location.href='state.html?id=${s.id}'"
+                         onmouseenter="this.style.borderColor='var(--color-gold)'; this.style.background='rgba(212,175,55,0.05)';"
+                         onmouseleave="this.style.borderColor='var(--color-border)'; this.style.background='rgba(255,255,255,0.01)';">
+                        <div>
+                            <h4 style="font-size:1.1rem; color:var(--color-text-main); font-family:var(--font-body); font-weight:600; margin-bottom:4px;">${s.name}</h4>
+                            <p style="font-size:0.8rem; color:var(--color-text-muted); text-transform:uppercase; letter-spacing:1px;">
+                                ${s.capital} &bull; <span style="color:var(--color-gold);">${s.style.split(", ")[0]}</span>
+                            </p>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <span style="font-size:0.75rem; background:rgba(255,255,255,0.05); color:var(--color-text-muted); padding:3px 8px; border-radius:4px;">${s.placesCount} spots</span>
+                            <span style="color:var(--color-gold); font-weight:bold;">&rarr;</span>
+                        </div>
+                    </div>
+                `).join("");
+            };
+
+            // Initial render
+            filterAndRender();
+
+            // Searchbox events
+            searchBox.addEventListener("input", (e) => {
+                currentQuery = e.target.value.toLowerCase().trim();
+                filterAndRender();
+            });
+
+            // Tabs events
+            filterTabs.forEach(tab => {
+                tab.addEventListener("click", () => {
+                    currentRegion = tab.getAttribute("data-region");
+                    filterAndRender();
+                });
+            });
+        }
+    </script>
+</body>
+</html>

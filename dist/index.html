@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Horizon | India Travel Diaries &amp; Destination Exploration Portal</title>
+    <meta name="description" content="Discover every Indian state and union territory with Bharat Horizon. Explore interactive maps, detailed itineraries, local food specialties, and professional flight guides.">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+    <!-- Header Section (Dynamic) -->
+    <header class="scrolled">
+    <div class="container nav-container">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M21,16V14L13,9V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V9L2,14V16L10,13.5V19L8,20.5V22L11.5,21L15,22V20.5L13,19V13.5L21,16Z"/>
+                </svg>
+            </div>
+            <span class="logo-text">Bharat Horizon</span>
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore India</a></li>
+            <li><a href="diaries.html">Travel Diaries</a></li>
+            <li><a href="itineraries.html">Itineraries</a></li>
+            <li><a href="food-culture.html">Food &amp; Culture</a></li>
+            <li><a href="best-time.html">Best Seasons</a></li>
+            <li><a href="tips.html">Travel Tips</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="nav-cta">Plan Trip</a></li>
+        </ul>
+    </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <svg class="hero-background-svg" viewBox="0 0 800 800">
+                <circle cx="400" cy="400" r="300" />
+                <circle cx="400" cy="400" r="200" />
+                <line x1="100" y1="400" x2="700" y2="400" />
+                <line x1="400" y1="100" x2="400" y2="700" />
+            </svg>
+            <div class="container hero-container">
+                <div class="hero-content animated-element">
+                    <h1>Explore the Horizon of <span>Incredible India</span></h1>
+                    <p>Unlock the secrets of 36 states and union territories. Explore curated travel diaries, step-by-step local itineraries, gastronomic guides, and book flights dynamically.</p>
+                    
+                    <!-- Autocomplete Search Bar -->
+                    <div class="hero-search-wrapper">
+                        <div class="hero-search-bar">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/>
+                            </svg>
+                            <input type="text" class="search-input-trigger" placeholder="Where do you want to fly? (e.g. Rajasthan, Goa, Kerala...)" aria-label="Search destinations">
+                        </div>
+                    </div>
+
+                    <div class="quick-search-tags">
+                        <span>Popular:</span>
+                        <a href="states/rajasthan/index.html">Rajasthan</a>
+                        <a href="states/goa/index.html">Goa</a>
+                        <a href="states/kerala/index.html">Kerala</a>
+                        <a href="states/ladakh/index.html">Ladakh</a>
+                        <a href="states/himachal-pradesh/index.html">Manali</a>
+                    </div>
+                </div>
+
+                <!-- Interactive Map Sidebar widget -->
+                <div class="animated-element" style="animation-delay: 0.2s;">
+                    <div class="map-widget-container">
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+                            <h3 style="font-size:1.1rem; color:var(--color-gold); font-family:var(--font-heading); margin-bottom:0;">Flight Network Map</h3>
+                            <a href="explore.html" style="font-size:0.8rem; color:var(--color-accent-blue); text-decoration:underline;">Full Map</a>
+                        </div>
+                        <!-- Simplified interactive map display -->
+                        <div id="interactive-map-holder">
+                            <!-- SVG Map is injected dynamically or embedded -->
+                            <!-- We embed map-india.svg here directly for seamless loading -->
+                            <object data="assets/images/map-india.svg" type="image/svg+xml" class="map-svg-element" id="india-constellation-map-obj" style="height:350px; pointer-events:auto;"></object>
+                        </div>
+                        <div style="font-size:0.75rem; text-align:center; color:var(--color-text-muted); margin-top:10px;">
+                            Click glowing nodes to navigate state diaries.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular States Section -->
+        <section class="section-wrapper container">
+            <div class="section-header">
+                <div>
+                    <h2>Popular Destinations</h2>
+                    <p>Embark on premium journeys across India's most popular travel sectors.</p>
+                </div>
+                <a href="explore.html" class="btn btn-secondary">Explore All 36 States</a>
+            </div>
+            
+            <div class="cards-grid">
+                <!-- Card 1: Rajasthan -->
+                <div class="state-card" onclick="window.location.href='state.html?id=rajasthan'">
+                    <img src="assets/images/placeholder.svg" alt="Rajasthan" class="state-card-img">
+                    <div class="state-card-overlay">
+                        <span class="state-card-region">North India</span>
+                        <h3 class="state-card-title">Rajasthan</h3>
+                        <p class="state-card-vibe">Land of kings, royal forts, and golden desert dunes.</p>
+                        <div class="state-card-footer">
+                            <span>20 Destinations</span>
+                            <span>Explore Guide &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2: Goa -->
+                <div class="state-card" onclick="window.location.href='state.html?id=goa'">
+                    <img src="assets/images/placeholder.svg" alt="Goa" class="state-card-img">
+                    <div class="state-card-overlay">
+                        <span class="state-card-region">West India</span>
+                        <h3 class="state-card-title">Goa</h3>
+                        <p class="state-card-vibe">Beaches, nightlife, churches, and Indo-Portuguese culture.</p>
+                        <div class="state-card-footer">
+                            <span>20 Destinations</span>
+                            <span>Explore Guide &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Kerala -->
+                <div class="state-card" onclick="window.location.href='state.html?id=kerala'">
+                    <img src="assets/images/placeholder.svg" alt="Kerala" class="state-card-img">
+                    <div class="state-card-overlay">
+                        <span class="state-card-region">South India</span>
+                        <h3 class="state-card-title">Kerala</h3>
+                        <p class="state-card-vibe">God's Own Country: tranquil backwaters, hills, and Ayurveda.</p>
+                        <div class="state-card-footer">
+                            <span>20 Destinations</span>
+                            <span>Explore Guide &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Itineraries Hub -->
+        <section class="section-wrapper" style="background: rgba(255,255,255,0.01); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <h2>Featured Itineraries</h2>
+                        <p>Perfectly curated schedules to maximize your exploration efficiency.</p>
+                    </div>
+                    <a href="itineraries.html" class="btn btn-secondary">Browse All Plans</a>
+                </div>
+
+                <div class="cards-grid">
+                    <!-- 2 Day Trip -->
+                    <div class="glass-panel" style="padding:30px;">
+                        <span style="font-size:0.75rem; background:rgba(212,175,55,0.15); color:var(--color-gold); padding:4px 12px; border-radius:30px; font-weight:700; text-transform:uppercase;">Short Break</span>
+                        <h3 style="font-size:1.4rem; margin:15px 0 10px 0;">2-Day Weekend Escape</h3>
+                        <p style="font-size:0.9rem; color:var(--color-text-muted); margin-bottom:20px; line-height:1.5;">Ideal for city breaks, clean cities, and rapid explorations of key historic monuments.</p>
+                        <ul style="list-style:none; font-size:0.9rem; color:var(--color-text-muted); margin-bottom:25px; display:flex; flex-direction:column; gap:10px;">
+                            <li>• Day 1: Central Heritage &amp; Traditional Dinner</li>
+                            <li>• Day 2: Nature Parks, Art Museums &amp; Shopping</li>
+                        </ul>
+                        <a href="itineraries.html?duration=2" class="diary-card-readmore">View Itinerary Details &rarr;</a>
+                    </div>
+
+                    <!-- 3 Day Trip -->
+                    <div class="glass-panel" style="padding:30px;">
+                        <span style="font-size:0.75rem; background:rgba(0,180,216,0.15); color:var(--color-accent-blue); padding:4px 12px; border-radius:30px; font-weight:700; text-transform:uppercase;">Extended Stay</span>
+                        <h3 style="font-size:1.4rem; margin:15px 0 10px 0;">3-Day Explorer Plan</h3>
+                        <p style="font-size:0.9rem; color:var(--color-text-muted); margin-bottom:20px; line-height:1.5;">Perfect for deep diving into cultural centers, major temples, or regional hill station valleys.</p>
+                        <ul style="list-style:none; font-size:0.9rem; color:var(--color-text-muted); margin-bottom:25px; display:flex; flex-direction:column; gap:10px;">
+                            <li>• Day 1: Historic Sites Tour &amp; Food Crawl</li>
+                            <li>• Day 2: Scenic Day Hike or Waterfall Visit</li>
+                            <li>• Day 3: Local Artisans, Souvenirs &amp; Depart</li>
+                        </ul>
+                        <a href="itineraries.html?duration=3" class="diary-card-readmore">View Itinerary Details &rarr;</a>
+                    </div>
+
+                    <!-- 5 Day Trip -->
+                    <div class="glass-panel" style="padding:30px;">
+                        <span style="font-size:0.75rem; background:rgba(212,175,55,0.15); color:var(--color-gold); padding:4px 12px; border-radius:30px; font-weight:700; text-transform:uppercase;">Grand Journey</span>
+                        <h3 style="font-size:1.4rem; margin:15px 0 10px 0;">5-Day Complete Journey</h3>
+                        <p style="font-size:0.9rem; color:var(--color-text-muted); margin-bottom:20px; line-height:1.5;">Ultimate immersive path covering regional cities, sanctuaries, backwaters, and villages.</p>
+                        <ul style="list-style:none; font-size:0.9rem; color:var(--color-text-muted); margin-bottom:25px; display:flex; flex-direction:column; gap:10px;">
+                            <li>• Day 1-2: Capital Sights &amp; Historical Walk</li>
+                            <li>• Day 3: Forest Safari or Wild Nature Trails</li>
+                            <li>• Day 4: Rural Farming &amp; Organic Food Tour</li>
+                            <li>• Day 5: Modern Hub Sightseeing &amp; Transfer</li>
+                        </ul>
+                        <a href="itineraries.html?duration=5" class="diary-card-readmore">View Itinerary Details &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skyscanner Flight & Hotel Booking Affiliate Widget -->
+        <section class="container affiliate-section-banner">
+            <div class="affiliate-banner-text">
+                <span style="color:var(--color-gold); font-size:0.85rem; font-weight:700; text-transform:uppercase; letter-spacing:2px;">Specialist Travel Rates</span>
+                <h3>Find the Best Airfares to India</h3>
+                <p>Book your aviation segments through Skyscanner's live comparison portal. Compare routes from 1,000+ carriers to any major Indian airport. Simple, secure, and direct booking.</p>
+                <div style="display:flex; gap:20px; flex-wrap:wrap;">
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <span style="color:var(--color-gold); font-weight:bold;">✓</span>
+                        <span style="font-size:0.9rem;">No hidden fees</span>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <span style="color:var(--color-gold); font-weight:bold;">✓</span>
+                        <span style="font-size:0.9rem;">Affiliate partner trust</span>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <span style="color:var(--color-gold); font-weight:bold;">✓</span>
+                        <span style="font-size:0.9rem;">Flexible cancellation filters</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skyscanner-widget-mockup">
+                <h5>
+                    <svg viewBox="0 0 24 24"><path d="M21,16V14L13,9V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V9L2,14V16L10,13.5V19L8,20.5V22L11.5,21L15,22V20.5L13,19V13.5L21,16Z"/></svg>
+                    Compare &amp; Book Flights
+                </h5>
+                <form onsubmit="mockSearchFlights(event);">
+                    <div class="skyscanner-form-grid">
+                        <div class="form-group-skyscanner">
+                            <label for="flight-origin">Origin</label>
+                            <input type="text" id="flight-origin" value="London Heathrow (LHR)" placeholder="Departure airport" required>
+                        </div>
+                        <div class="form-group-skyscanner">
+                            <label for="flight-dest">Destination</label>
+                            <input type="text" id="flight-dest" value="Delhi (DEL)" placeholder="Arrival airport" required>
+                        </div>
+                        <div class="form-group-skyscanner">
+                            <label for="flight-date">Departure Date</label>
+                            <input type="date" id="flight-date" required>
+                        </div>
+                        <div class="form-group-skyscanner">
+                            <label for="flight-class">Cabin Class</label>
+                            <select id="flight-class">
+                                <option>Economy</option>
+                                <option>Premium Economy</option>
+                                <option>Business Class</option>
+                                <option>First Class</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="skyscanner-submit-btn">Search flights &rarr;</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Seasons & Travel Tips Section -->
+        <section class="section-wrapper container" style="border-top:1px solid rgba(255,255,255,0.05);">
+            <div class="section-header">
+                <div>
+                    <h2>Seasons &amp; Travel Tips</h2>
+                    <p>Prepare your baggage with tips regarding climate, gears, and visa norms.</p>
+                </div>
+                <a href="tips.html" class="btn btn-secondary">Read Gear Checklist</a>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Seasons Card -->
+                <div class="glass-panel" style="padding:30px;">
+                    <h3 style="font-size:1.25rem; color:var(--color-gold); margin-bottom:15px; text-transform:uppercase;">Best Time to Visit</h3>
+                    <p style="font-size:0.9rem; color:var(--color-text-muted); line-height:1.6; margin-bottom:20px;">
+                        • <strong>Winter (Oct - Mar):</strong> Ideal weather countrywide. Highly recommended for sightseeing.<br>
+                        • <strong>Summer (Apr - Jun):</strong> Perfect season for visiting the Himalayan peaks and hill stations.<br>
+                        • <strong>Monsoon (Jul - Sep):</strong> Spectacular views of waterfalls and misty valleys in Kerala and Meghalaya.
+                    </p>
+                    <a href="best-time.html" class="diary-card-readmore">Seasonal Calendar &rarr;</a>
+                </div>
+
+                <!-- Tips Card -->
+                <div class="glass-panel" style="padding:30px;">
+                    <h3 style="font-size:1.25rem; color:var(--color-gold); margin-bottom:15px; text-transform:uppercase;">Travel Essentials</h3>
+                    <p style="font-size:0.9rem; color:var(--color-text-muted); line-height:1.6; margin-bottom:20px;">
+                        • <strong>E-Visa:</strong> Apply for the official Indian Tourist E-Visa online at least 10 days prior.<br>
+                        • <strong>Connectivity:</strong> Buy a local 4G/5G eSIM at major airports for seamless navigation.<br>
+                        • <strong>UPI/Cash:</strong> UPI is universal; however, carry minor cash for rural road stalls and entry tickets.
+                    </p>
+                    <a href="tips.html" class="diary-card-readmore">Travel Tips Portal &rarr;</a>
+                </div>
+
+                <!-- Gear Card -->
+                <div class="glass-panel" style="padding:30px;">
+                    <h3 style="font-size:1.25rem; color:var(--color-gold); margin-bottom:15px; text-transform:uppercase;">Insurance &amp; Safety</h3>
+                    <p style="font-size:0.9rem; color:var(--color-text-muted); line-height:1.6; margin-bottom:20px;">
+                        • <strong>Medical Insurance:</strong> Always buy travel insurance with medical evacuation coverage.<br>
+                        • <strong>Water Safety:</strong> Drink bottled mineral water; skip ice in road stalls.<br>
+                        • <strong>Emergency Numbers:</strong> Local police code is 112. Save hotel addresses in offline maps.
+                    </p>
+                    <a href="tips.html#insurance" class="diary-card-readmore">Safety Guide &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section (Dynamic) -->
+    <footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M21,16V14L13,9V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V9L2,14V16L10,13.5V19L8,20.5V22L11.5,21L15,22V20.5L13,19V13.5L21,16Z"/>
+                        </svg>
+                    </div>
+                    <span class="logo-text">Bharat Horizon</span>
+                </a>
+                <p>Discover India's soul. An aviation-inspired premium travel diary and destination guide, carefully highlighting regional wonders, culinary routes, and pristine hidden getaways across 36 states and union territories.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore Regions</h4>
+                <ul>
+                    <li><a href="explore.html?region=North">North Region</a></li>
+                    <li><a href="explore.html?region=North East">North East Region</a></li>
+                    <li><a href="explore.html?region=East">East Region</a></li>
+                    <li><a href="explore.html?region=Central">Central Region</a></li>
+                    <li><a href="explore.html?region=West">West Region</a></li>
+                    <li><a href="explore.html?region=South">South Region</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="diaries.html">Travel Blogs</a></li>
+                    <li><a href="itineraries.html">Itineraries</a></li>
+                    <li><a href="best-time.html">Best Seasons</a></li>
+                    <li><a href="tips.html">Gear &amp; Tips</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Inspired</h4>
+                <p>Subscribe to receive curated luxury travel diaries and flight itineraries monthly.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                    <input type="email" placeholder="Your email address" required aria-label="Email address">
+                    <button type="submit" aria-label="Subscribe">
+                        <svg viewBox="0 0 24 24"><path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bharat Horizon. All rights reserved. Crafted for explorers.</p>
+            <div class="footer-bottom-links">
+                <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Set default date in flight form
+        document.getElementById("flight-date").valueAsDate = new Date(Date.now() + 14 * 24 * 60 * 60 * 1000);
+    </script>
+</body>
+</html>

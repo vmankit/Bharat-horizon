@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Travel Guide | Bharat Horizon</title>
+    <meta name="description" content="Plan your trip with our premium state travel guides. Explore detailed itineraries, popular foods, festivals, and top places to visit.">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+    <!-- Header Section (Dynamic) -->
+    <header></header>
+
+    <main id="state-main-wrapper">
+        
+        <!-- State Hero Banner -->
+        <section class="state-hero">
+            <img src="assets/images/placeholder.svg" alt="State Landscape" class="state-hero-bg">
+            <div class="state-hero-overlay"></div>
+            <div class="container state-hero-content">
+                <p id="state-vibe">Explore regional wonders</p>
+                <h1 id="state-title">Indian State</h1>
+            </div>
+        </section>
+
+        <!-- Breadcrumbs bar -->
+        <section class="container" style="padding-top:10px;">
+            <div id="breadcrumb-container" class="breadcrumbs"></div>
+        </section>
+
+        <!-- Main State Content Grid -->
+        <section class="container state-grid-layout">
+            
+            <!-- Left Main Column -->
+            <div class="state-main-content">
+                
+                <!-- Overview -->
+                <section>
+                    <h2>Overview</h2>
+                    <p id="state-overview" style="font-size:1.1rem; color:var(--color-text-muted); line-height:1.7; margin-bottom:30px;"></p>
+                </section>
+
+                <!-- Top 20 Places to Visit -->
+                <section>
+                    <h2>Top 20 Places to Visit</h2>
+                    <p style="color:var(--color-text-muted); margin-bottom:30px;">A comprehensive, curated collection of the top 20 sights, architectural heritage spots, and natural parks you must see.</p>
+                    <div id="places-grid" class="cards-grid">
+                        <!-- Populated dynamically via state.js -->
+                    </div>
+                </section>
+
+                <!-- Itineraries Section -->
+                <section>
+                    <h2>Suggested Itineraries</h2>
+                    <p style="color:var(--color-text-muted); margin-bottom:35px;">Select your travel duration to view a carefully scheduled hour-by-hour itinerary designed by travel experts.</p>
+                    
+                    <div class="itinerary-selector">
+                        <button class="itinerary-btn" id="tab-2day">2-Day weekend</button>
+                        <button class="itinerary-btn active" id="tab-3day">3-Day explorer</button>
+                        <button class="itinerary-btn" id="tab-5day">5-Day journey</button>
+                    </div>
+
+                    <div id="itinerary-timeline" class="timeline">
+                        <!-- Populated dynamically via state.js -->
+                    </div>
+                </section>
+
+                <!-- Cuisine & Food -->
+                <section>
+                    <h2>Gastronomic Heritage</h2>
+                    <p style="color:var(--color-text-muted); margin-bottom:30px;">Tantalize your tastebuds with these popular local dishes and street food specialties.</p>
+                    <div id="famous-foods-list" class="food-grid-list">
+                        <!-- Populated dynamically via state.js -->
+                    </div>
+                </section>
+
+                <!-- Festivals & Culture -->
+                <section>
+                    <h2>Festivals &amp; Traditions</h2>
+                    <p style="color:var(--color-text-muted); margin-bottom:30px;">Plan your travel dates around these vibrant regional harvest, art, and music festivals.</p>
+                    <div id="festivals-list" style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+                        <!-- Populated dynamically via state.js -->
+                    </div>
+                </section>
+
+                <!-- FAQ Section -->
+                <section>
+                    <h2>Frequently Asked Questions</h2>
+                    <p style="color:var(--color-text-muted); margin-bottom:30px;">Find answers to essential travel questions regarding safety, transit, and local customs.</p>
+                    <div id="faqs-list" class="faq-accordion">
+                        <!-- Populated dynamically via state.js -->
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Right Sidebar Column -->
+            <div class="state-sidebar">
+                
+                <!-- Quick Facts Widget -->
+                <div class="sidebar-widget">
+                    <h3>Quick Facts</h3>
+                    <div class="fact-list">
+                        <div class="fact-item">
+                            <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A1.5,1.5 0 0,0 10.5,7.5A1.5,1.5 0 0,0 12,9A1.5,1.5 0 0,0 13.5,7.5A1.5,1.5 0 0,0 12,6M10,10V12H11V18H10V20H14V18H13V12H14V10H10Z"/></svg>
+                            <div class="fact-item-text">
+                                <h5>Capital City</h5>
+                                <p id="fact-capital">City Name</p>
+                            </div>
+                        </div>
+                        <div class="fact-item">
+                            <svg viewBox="0 0 24 24"><path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/></svg>
+                            <div class="fact-item-text">
+                                <h5>Region</h5>
+                                <p id="fact-region">North India</p>
+                            </div>
+                        </div>
+                        <div class="fact-item">
+                            <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A1.5,1.5 0 0,0 10.5,7.5A1.5,1.5 0 0,0 12,9A1.5,1.5 0 0,0 13.5,7.5A1.5,1.5 0 0,0 12,6M10,10V12H11V18H10V20H14V18H13V12H14V10H10Z"/></svg>
+                            <div class="fact-item-text">
+                                <h5>Budget Level</h5>
+                                <p id="fact-budget">Economy</p>
+                            </div>
+                        </div>
+                        <div class="fact-item">
+                            <svg viewBox="0 0 24 24"><path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"/></svg>
+                            <div class="fact-item-text">
+                                <h5>Transit Access</h5>
+                                <p id="fact-reach">Air &amp; Rail</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skyscanner Flight search block -->
+                <div class="sidebar-widget" style="padding:20px;">
+                    <h3 style="font-size:1.1rem; border-bottom:none; margin-bottom:15px; color:var(--color-accent-blue);">Flights Search</h3>
+                    <form onsubmit="mockSearchFlights(event);">
+                        <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:15px;">
+                            <div class="form-group-skyscanner">
+                                <label style="font-size:0.65rem;">Origin</label>
+                                <input type="text" id="flight-origin" value="London (LHR)" style="padding:8px;">
+                            </div>
+                            <div class="form-group-skyscanner">
+                                <label style="font-size:0.65rem;">Destination</label>
+                                <input type="text" id="flight-dest" value="Delhi (DEL)" style="padding:8px;">
+                            </div>
+                            <div class="form-group-skyscanner">
+                                <label style="font-size:0.65rem;">Date</label>
+                                <input type="date" id="flight-date" style="padding:8px;">
+                            </div>
+                        </div>
+                        <button type="submit" class="skyscanner-submit-btn" style="padding:10px; font-size:0.8rem;">Search Flights</button>
+                    </form>
+                </div>
+
+                <!-- Climate / Seasons widget -->
+                <div class="sidebar-widget">
+                    <h3>Best Season</h3>
+                    <p id="state-best-time" style="font-size:0.95rem; color:var(--color-text-muted); line-height:1.6;"></p>
+                </div>
+
+                <!-- Budget Guide Card -->
+                <div class="sidebar-widget">
+                    <h3>Cost Estimator</h3>
+                    <div style="display:flex; justify-content:space-between; margin-bottom:12px;">
+                        <span style="font-size:0.9rem; color:var(--color-text-muted);">Est. Cost/Day</span>
+                        <span id="budget-cost" style="font-weight:bold; color:var(--color-gold);">INR 3,500</span>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; margin-bottom:15px;">
+                        <span style="font-size:0.9rem; color:var(--color-text-muted);">Budget Rank</span>
+                        <span id="budget-rating" style="color:var(--color-gold);">★★★★☆</span>
+                    </div>
+                    <p id="budget-desc" style="font-size:0.88rem; color:var(--color-text-muted); line-height:1.5; border-top:1px solid rgba(255,255,255,0.05); padding-top:12px;"></p>
+                </div>
+
+                <!-- How to Reach details -->
+                <div class="sidebar-widget">
+                    <h3>How to Reach</h3>
+                    <div style="font-size:0.9rem; color:var(--color-text-muted); line-height:1.6; display:flex; flex-direction:column; gap:12px;">
+                        <div>
+                            <strong style="color:var(--color-text-main);">✈ By Air:</strong>
+                            <p id="reach-air" style="margin-top:3px;"></p>
+                        </div>
+                        <div>
+                            <strong style="color:var(--color-text-main);">🚂 By Rail:</strong>
+                            <p id="reach-rail" style="margin-top:3px;"></p>
+                        </div>
+                        <div>
+                            <strong style="color:var(--color-text-main);">🚗 By Road:</strong>
+                            <p id="reach-road" style="margin-top:3px;"></p>
+                        </div>
+                        <div style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 12px; margin-top: 5px;">
+                            <strong style="color:var(--color-text-main); font-size:0.85rem; text-transform:uppercase; display:block; margin-bottom:6px;">Main Hubs:</strong>
+                            <ul id="airports-list" style="padding-left:15px; font-size:0.85rem;">
+                                <!-- Populated dynamically -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expert Travel Tips -->
+                <div class="sidebar-widget">
+                    <h3>Travel Advice</h3>
+                    <div id="tips-list">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+
+                <!-- Related Blog Articles -->
+                <div class="sidebar-widget">
+                    <h3>Related Diaries</h3>
+                    <div id="related-blogs-list">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer></footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/state.js"></script>
+    <script>
+        // Set default date in sidebar flight search
+        const dateInput = document.getElementById("flight-date");
+        if(dateInput) dateInput.valueAsDate = new Date(Date.now() + 14 * 24 * 60 * 60 * 1000);
+    </script>
+</body>
+</html>

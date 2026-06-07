@@ -1,0 +1,274 @@
+{
+  "id": "maharashtra",
+  "name": "Maharashtra",
+  "type": "State",
+  "capital": "Mumbai",
+  "region": "West",
+  "vibe": "Financial powerhouse, hill station getaways, and historic caves",
+  "style": "cities, hill stations, caves, beaches, food",
+  "overview": "Welcome to Maharashtra, one of India's most fascinating destinations. Known for its incredible cities, hill stations, caves, beaches, food, Maharashtra offers a breathtaking mixture of natural beauty, historic heritage, and cultural warmth. From the moment you arrive, you will be immersed in its unique atmosphere, friendly local community, and flavorful local delicacies.",
+  "bestTimeToVisit": "The ideal season to explore Maharashtra is from October to March when the weather is pleasant and dry. Monsoon season (July to September) offers lush greenery, while summers (April to June) can be warm but are excellent for highland hill stations.",
+  "budgetGuide": {
+    "level": "Mid-Range to Luxury",
+    "costPerDay": "INR 2,500 - 8,000",
+    "rating": 4,
+    "description": "Maharashtra caters to all kinds of wallets. Backpackers can easily manage on INR 1,500/day utilizing hostels and street food, while mid-range tourists seeking comfortable stays, dining, and cabs will spend around INR 3,500/day. High-end luxury resorts range upwards of INR 10,000/night."
+  },
+  "howToReach": {
+    "air": "Main airport is located in Mumbai (and other major hubs) with frequent connections to metropolitan cities like Delhi, Mumbai, Bengaluru, and Chennai.",
+    "rail": "Extensive railway network connects the main state junctions to all parts of India.",
+    "road": "State and national highways are well-maintained, providing excellent bus connectivity and scenic road trips."
+  },
+  "airports_railways": [
+    "Mumbai International Airport (IATA: Code)",
+    "Mumbai Junction Railway Station",
+    "Secondary Regional Rail & Bus Hubs"
+  ],
+  "travelTips": [
+    "Respect local religious customs; remove footwear before entering temples and shrines.",
+    "Stay hydrated and only drink filtered or bottled mineral water.",
+    "Negotiate taxi/auto-rickshaw fares beforehand or hire via standard mobile applications.",
+    "Carry basic medication, sunscreen, and bug spray, especially when traveling in nature reserves.",
+    "Book monument tickets online via the ASI portal to skip long queues."
+  ],
+  "famousFoods": [
+    {
+      "name": "Maharashtra Signature Dish",
+      "description": "A traditional local delicacy of Maharashtra prepared with aromatic regional spices and local ingredients."
+    },
+    {
+      "name": "Masala Delight",
+      "description": "Crisp and flavorful snacks loved by travelers across the region."
+    },
+    {
+      "name": "Local Fusion Platter",
+      "description": "A vibrant assortment of culinary items exhibiting centuries of regional food evolution."
+    },
+    {
+      "name": "Desi Sweet Treat",
+      "description": "A classic sweet dish prepared with milk, sugar, ghee, and local nuts for festivals."
+    },
+    {
+      "name": "Regional Heritage Curry",
+      "description": "Rich slow-cooked gravy base served with traditional bread or rice."
+    }
+  ],
+  "festivals": [
+    {
+      "name": "Ganesh Chaturthi",
+      "month": "September",
+      "vibe": "Spectacular ten-day public festival celebrating the birth of Lord Ganesha."
+    },
+    {
+      "name": "Spring Harvest Festival",
+      "month": "April",
+      "vibe": "Colorful celebrations marking the agricultural season with song, dance, and prayers."
+    },
+    {
+      "name": "Winter Light Festival",
+      "month": "January",
+      "vibe": "Traditional bonfire gatherings and local musical performances under the winter sky."
+    }
+  ],
+  "itinerary2Day": [
+    {
+      "day": 1,
+      "theme": "Introduction & Heritage",
+      "activities": [
+        "Arrive, check into a premium heritage stay.",
+        "Visit the iconic historical center and central market.",
+        "Enjoy a traditional lunch at a legendary local eatery.",
+        "Sunset walk around the main monument or panoramic viewpoint."
+      ]
+    },
+    {
+      "day": 2,
+      "theme": "Modern Vibe & Nature",
+      "activities": [
+        "Sunrise visit to local temple or lake.",
+        "Breakfast featuring typical local street food.",
+        "Explore popular museums, gardens, and modern landmarks.",
+        "Departure in the evening with local souvenirs."
+      ]
+    }
+  ],
+  "itinerary3Day": [
+    {
+      "day": 1,
+      "theme": "Heritage Explorer",
+      "activities": [
+        "Check-in and orientation tour.",
+        "Visit three main heritage sites.",
+        "Local culinary tour in the historic quarters."
+      ]
+    },
+    {
+      "day": 2,
+      "theme": "Hills & Outskirts",
+      "activities": [
+        "Drive to a scenic viewpoint or historic fort on the outskirts.",
+        "Picnic lunch near a waterfall or valley.",
+        "Attend a cultural performance in the evening."
+      ]
+    },
+    {
+      "day": 3,
+      "theme": "Shopping & Local Craft",
+      "activities": [
+        "Explore artisan craft markets and buy traditional handlooms.",
+        "Leisurely afternoon cafe hopping.",
+        "Evening departure."
+      ]
+    }
+  ],
+  "itinerary5Day": [
+    {
+      "day": 1,
+      "theme": "Arrival & Central Sights",
+      "activities": [
+        "Arrive and rest at your boutique hotel.",
+        "Evening stroll around the main lakeside or heritage square.",
+        "Traditional dinner."
+      ]
+    },
+    {
+      "day": 2,
+      "theme": "Deep History Tour",
+      "activities": [
+        "Guided historic site walk covering palaces, tombs, and temples.",
+        "Interactive pottery or craft workshop.",
+        "Street food crawl."
+      ]
+    },
+    {
+      "day": 3,
+      "theme": "Eco-Tourism & Wilderness",
+      "activities": [
+        "Full day excursion to the nearest national park, wildlife sanctuary, or pristine nature trail.",
+        "A guided nature trek or bird-watching session."
+      ]
+    },
+    {
+      "day": 4,
+      "theme": "Rural Village Experience",
+      "activities": [
+        "Visit a nearby agricultural village to experience authentic local life.",
+        "Organic farm lunch.",
+        "Evening relaxation and spa/wellness treatment."
+      ]
+    },
+    {
+      "day": 5,
+      "theme": "Modern Hub & Departure",
+      "activities": [
+        "Visit contemporary museums and commercial hubs.",
+        "Pack up and purchase local spices or handicrafts.",
+        "Transfer to airport/station for departure."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the best way to travel around Maharashtra?",
+      "a": "Renting a private cab or using prepaid taxi apps is recommended for city hops. Government and luxury private buses connect major destinations, while local auto-rickshaws are ideal for shorter transit."
+    },
+    {
+      "q": "Is Maharashtra safe for solo travelers?",
+      "a": "Yes, it is generally very welcoming and safe. However, like any travel destination, it's wise to avoid desolate spots at night, use authorized transit, and keep family updated on your route."
+    },
+    {
+      "q": "What language is spoken in Maharashtra?",
+      "a": "The primary regional language is spoken widely, but Hindi and English are commonly understood by hoteliers, shopkeepers, and transport operators in tourism sectors."
+    },
+    {
+      "q": "What should I pack for a trip to Maharashtra?",
+      "a": "Pack breathable cotton clothing for summers. For winters or highland destinations, carry thermal layers, fleece jackets, and comfortable walking shoes. Please pack modest attire for visiting spiritual places."
+    },
+    {
+      "q": "Do I need to carry cash in Maharashtra?",
+      "a": "Digital payments (UPI, Cards) are accepted in almost all restaurants, hotels, and retail stores. However, carrying cash is highly recommended for small vendors, street food stalls, and entry tickets in remote areas."
+    }
+  ],
+  "places": [
+    {
+      "name": "Mumbai Gateway of India",
+      "slug": "mumbai-gateway-of-india"
+    },
+    {
+      "name": "Pune Shaniwar Wada",
+      "slug": "pune-shaniwar-wada"
+    },
+    {
+      "name": "Nashik Panchavati Vineyards",
+      "slug": "nashik-panchavati-vineyards"
+    },
+    {
+      "name": "Nagpur Deekshabhoomi",
+      "slug": "nagpur-deekshabhoomi"
+    },
+    {
+      "name": "Mahabaleshwar Venna Lake",
+      "slug": "mahabaleshwar-venna-lake"
+    },
+    {
+      "name": "Kolhapur Mahalaxmi Temple",
+      "slug": "kolhapur-mahalaxmi-temple"
+    },
+    {
+      "name": "Satara Kaas Plateau of Flowers",
+      "slug": "satara-kaas-plateau-of-flowers"
+    },
+    {
+      "name": "Jalgaon Ajanta Caves",
+      "slug": "jalgaon-ajanta-caves"
+    },
+    {
+      "name": "Amravati Chikhaldara",
+      "slug": "amravati-chikhaldara"
+    },
+    {
+      "name": "Chhatrapati Sambhaji Nagar Ellora Caves",
+      "slug": "chhatrapati-sambhaji-nagar-ellora-caves"
+    },
+    {
+      "name": "Igatpuri Vipassana Center",
+      "slug": "igatpuri-vipassana-center"
+    },
+    {
+      "name": "Lonavala Bhushi Dam",
+      "slug": "lonavala-bhushi-dam"
+    },
+    {
+      "name": "Khandala Sunset Point",
+      "slug": "khandala-sunset-point"
+    },
+    {
+      "name": "Alibaug Beaches Fort",
+      "slug": "alibaug-beaches-fort"
+    },
+    {
+      "name": "Matheran Toy Train",
+      "slug": "matheran-toy-train"
+    },
+    {
+      "name": "Shirdi Sai Baba Temple",
+      "slug": "shirdi-sai-baba-temple"
+    },
+    {
+      "name": "Tadoba Andhari Tiger Reserve",
+      "slug": "tadoba-andhari-tiger-reserve"
+    },
+    {
+      "name": "Sanjay Gandhi National Park Mumbai",
+      "slug": "sanjay-gandhi-national-park-mumbai"
+    },
+    {
+      "name": "Elephanta Caves Island",
+      "slug": "elephanta-caves-island"
+    },
+    {
+      "name": "Murud Janjira Sea Fort",
+      "slug": "murud-janjira-sea-fort"
+    }
+  ]
+}

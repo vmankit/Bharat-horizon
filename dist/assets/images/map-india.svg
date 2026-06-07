@@ -1,0 +1,242 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" width="100%" height="100%" class="map-svg-element" id="india-constellation-map">
+  <!-- Map Defs for shadows and gradients -->
+  <defs>
+    <radialGradient id="mapBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0b1736" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#050a18" stop-opacity="0.9"/>
+    </radialGradient>
+    <filter id="nodeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Stylized Border Outline of India (Simplified representation for premium aviation design) -->
+  <path d="M 390 70 
+           L 410 90 L 420 130 L 460 170 L 480 190 L 520 220 
+           L 570 230 L 610 240 L 630 250 L 710 250 L 780 230
+           L 790 280 L 770 310 L 780 340 L 750 380 L 700 370
+           L 660 390 L 670 430 L 610 420 L 570 470 L 530 520
+           L 490 560 L 440 680 L 430 770 L 410 820 L 400 830
+           L 380 810 L 360 760 L 330 690 L 330 640 L 290 600
+           L 290 550 L 250 510 L 230 450 L 180 430 L 190 380
+           L 220 370 L 230 320 L 250 270 L 280 240 L 330 230
+           L 350 160 Z" 
+        fill="url(#mapBg)" 
+        stroke="#d4af37" 
+        stroke-opacity="0.08" 
+        stroke-width="2" 
+        stroke-dasharray="10 5" />
+
+  <!-- Constellation Regional Connection Lines (Flight paths linking capital hubs) -->
+  <!-- North Region Connections -->
+  <line x1="400" y1="215" x2="360" y2="110" class="map-connection-line" /> <!-- Delhi - JK -->
+  <line x1="400" y1="215" x2="400" y2="100" class="map-connection-line" /> <!-- Delhi - Ladakh -->
+  <line x1="400" y1="215" x2="420" y2="150" class="map-connection-line" /> <!-- Delhi - Himachal -->
+  <line x1="400" y1="215" x2="450" y2="180" class="map-connection-line" /> <!-- Delhi - Uttarakhand -->
+  <line x1="400" y1="215" x2="280" y2="280" class="map-connection-line" /> <!-- Delhi - Rajasthan -->
+  <line x1="400" y1="215" x2="480" y2="280" class="map-connection-line" /> <!-- Delhi - UP -->
+  <line x1="400" y1="215" x2="360" y2="170" class="map-connection-line" /> <!-- Delhi - Punjab -->
+  <line x1="400" y1="215" x2="380" y2="200" class="map-connection-line" /> <!-- Delhi - Haryana -->
+  <line x1="360" y1="170" x2="380" y2="175" class="map-connection-line" /> <!-- Punjab - Chandigarh -->
+
+  <!-- West / Central Connections -->
+  <line x1="280" y1="280" x2="220" y2="380" class="map-connection-line" /> <!-- Rajasthan - Gujarat -->
+  <line x1="220" y1="380" x2="420" y2="390" class="map-connection-line" /> <!-- Gujarat - MP -->
+  <line x1="420" y1="390" x2="480" y2="280" class="map-connection-line" /> <!-- MP - UP -->
+  <line x1="420" y1="390" x2="350" y2="500" class="map-connection-line" /> <!-- MP - Maharashtra -->
+  <line x1="350" y1="500" x2="290" y2="600" class="map-connection-line" /> <!-- Maharashtra - Goa -->
+  <line x1="350" y1="500" x2="250" y2="460" class="map-connection-line" /> <!-- Maharashtra - Daman/Diu -->
+
+  <!-- East / North East Connections -->
+  <line x1="480" y1="280" x2="600" y2="310" class="map-connection-line" /> <!-- UP - Bihar -->
+  <line x1="600" y1="310" x2="590" y2="370" class="map-connection-line" /> <!-- Bihar - JH -->
+  <line x1="600" y1="310" x2="630" y2="260" class="map-connection-line" /> <!-- Bihar - Sikkim -->
+  <line x1="590" y1="370" x2="670" y2="390" class="map-connection-line" /> <!-- JH - WB -->
+  <line x1="670" y1="390" x2="560" y2="450" class="map-connection-line" /> <!-- WB - Odisha -->
+  <line x1="560" y1="450" x2="500" y2="440" class="map-connection-line" /> <!-- Odisha - CG -->
+  <line x1="500" y1="440" x2="420" y2="390" class="map-connection-line" /> <!-- CG - MP -->
+  
+  <!-- NE Spine -->
+  <line x1="670" y1="390" x2="730" y2="280" class="map-connection-line" /> <!-- WB - Assam -->
+  <line x1="730" y1="280" x2="780" y2="240" class="map-connection-line" /> <!-- Assam - Arunachal -->
+  <line x1="730" y1="280" x2="790" y2="290" class="map-connection-line" /> <!-- Assam - Nagaland -->
+  <line x1="730" y1="280" x2="780" y2="320" class="map-connection-line" /> <!-- Assam - Manipur -->
+  <line x1="730" y1="280" x2="760" y2="360" class="map-connection-line" /> <!-- Assam - Mizoram -->
+  <line x1="730" y1="280" x2="730" y2="350" class="map-connection-line" /> <!-- Assam - Tripura -->
+  <line x1="730" y1="280" x2="710" y2="300" class="map-connection-line" /> <!-- Assam - Meghalaya -->
+
+  <!-- South Connections -->
+  <line x1="350" y1="500" x2="420" y2="560" class="map-connection-line" /> <!-- Maharashtra - Telangana -->
+  <line x1="420" y1="560" x2="420" y2="630" class="map-connection-line" /> <!-- Telangana - AP -->
+  <line x1="350" y1="500" x2="340" y2="650" class="map-connection-line" /> <!-- Maharashtra - Karnataka -->
+  <line x1="340" y1="650" x2="290" y2="600" class="map-connection-line" /> <!-- Karnataka - Goa -->
+  <line x1="340" y1="650" x2="420" y2="630" class="map-connection-line" /> <!-- Karnataka - AP -->
+  <line x1="340" y1="650" x2="350" y2="780" class="map-connection-line" /> <!-- Karnataka - Kerala -->
+  <line x1="340" y1="650" x2="420" y2="760" class="map-connection-line" /> <!-- Karnataka - TN -->
+  <line x1="350" y1="780" x2="420" y2="760" class="map-connection-line" /> <!-- Kerala - TN -->
+  <line x1="420" y1="760" x2="440" y2="710" class="map-connection-line" /> <!-- TN - Puducherry -->
+  <line x1="350" y1="780" x2="240" y2="760" class="map-connection-line" stroke-dasharray="2 6" /> <!-- Kerala - Lakshadweep -->
+  <line x1="420" y1="760" x2="720" y2="720" class="map-connection-line" stroke-dasharray="2 6" /> <!-- TN - Andaman -->
+
+  <!-- ================= STATE/UT INTERACTIVE NODES ================= -->
+  
+  <!-- North Nodes -->
+  <g class="state-node" data-id="delhi" transform="translate(400, 215)">
+    <circle r="6" filter="url(#nodeGlow)"/>
+    <text dx="10" dy="3">DELHI</text>
+  </g>
+  <g class="state-node" data-id="jammu-and-kashmir" transform="translate(360, 110)">
+    <circle r="6" filter="url(#nodeGlow)"/>
+    <text dx="10" dy="3">JAMMU &amp; KASHMIR</text>
+  </g>
+  <g class="state-node" data-id="ladakh" transform="translate(400, 100)">
+    <circle r="6" filter="url(#nodeGlow)"/>
+    <text dx="10" dy="3">LADAKH</text>
+  </g>
+  <g class="state-node" data-id="himachal-pradesh" transform="translate(420, 150)">
+    <circle r="6"/>
+    <text dx="10" dy="3">HIMACHAL PRADESH</text>
+  </g>
+  <g class="state-node" data-id="uttarakhand" transform="translate(450, 180)">
+    <circle r="6"/>
+    <text dx="10" dy="3">UTTARAKHAND</text>
+  </g>
+  <g class="state-node" data-id="punjab" transform="translate(360, 170)">
+    <circle r="6"/>
+    <text dx="-55" dy="3">PUNJAB</text>
+  </g>
+  <g class="state-node" data-id="chandigarh" transform="translate(380, 175)">
+    <circle r="4"/>
+    <text dx="8" dy="-5">CHANDIGARH</text>
+  </g>
+  <g class="state-node" data-id="haryana" transform="translate(380, 200)">
+    <circle r="6"/>
+    <text dx="-60" dy="3">HARYANA</text>
+  </g>
+  <g class="state-node" data-id="rajasthan" transform="translate(280, 280)">
+    <circle r="7" filter="url(#nodeGlow)"/>
+    <text dx="-80" dy="4">RAJASTHAN</text>
+  </g>
+  <g class="state-node" data-id="uttar-pradesh" transform="translate(480, 280)">
+    <circle r="7" filter="url(#nodeGlow)"/>
+    <text dx="10" dy="3">UTTAR PRADESH</text>
+  </g>
+
+  <!-- Central Nodes -->
+  <g class="state-node" data-id="madhya-pradesh" transform="translate(420, 390)">
+    <circle r="7" filter="url(#nodeGlow)"/>
+    <text dx="-50" dy="-10">MADHYA PRADESH</text>
+  </g>
+  <g class="state-node" data-id="chhattisgarh" transform="translate(500, 440)">
+    <circle r="6"/>
+    <text dx="10" dy="3">CHHATTISGARH</text>
+  </g>
+
+  <!-- East Nodes -->
+  <g class="state-node" data-id="bihar" transform="translate(600, 310)">
+    <circle r="6"/>
+    <text dx="10" dy="-5">BIHAR</text>
+  </g>
+  <g class="state-node" data-id="jharkhand" transform="translate(590, 370)">
+    <circle r="6"/>
+    <text dx="-75" dy="3">JHARKHAND</text>
+  </g>
+  <g class="state-node" data-id="west-bengal" transform="translate(670, 390)">
+    <circle r="6" filter="url(#nodeGlow)"/>
+    <text dx="10" dy="3">WEST BENGAL</text>
+  </g>
+  <g class="state-node" data-id="odisha" transform="translate(560, 450)">
+    <circle r="6"/>
+    <text dx="10" dy="12">ODISHA</text>
+  </g>
+
+  <!-- North East Nodes -->
+  <g class="state-node" data-id="sikkim" transform="translate(630, 260)">
+    <circle r="5"/>
+    <text dx="-45" dy="-8">SIKKIM</text>
+  </g>
+  <g class="state-node" data-id="assam" transform="translate(730, 280)">
+    <circle r="6" filter="url(#nodeGlow)"/>
+    <text dx="-30" dy="-8">ASSAM</text>
+  </g>
+  <g class="state-node" data-id="arunachal-pradesh" transform="translate(780, 240)">
+    <circle r="6"/>
+    <text dx="-60" dy="-10">ARUNACHAL</text>
+  </g>
+  <g class="state-node" data-id="nagaland" transform="translate(790, 290)">
+    <circle r="5"/>
+    <text dx="8" dy="3">NAGALAND</text>
+  </g>
+  <g class="state-node" data-id="manipur" transform="translate(780, 320)">
+    <circle r="5"/>
+    <text dx="8" dy="3">MANIPUR</text>
+  </g>
+  <g class="state-node" data-id="mizoram" transform="translate(760, 360)">
+    <circle r="5"/>
+    <text dx="8" dy="3">MIZORAM</text>
+  </g>
+  <g class="state-node" data-id="tripura" transform="translate(730, 350)">
+    <circle r="5"/>
+    <text dx="-55" dy="10">TRIPURA</text>
+  </g>
+  <g class="state-node" data-id="meghalaya" transform="translate(710, 300)">
+    <circle r="5"/>
+    <text dx="-75" dy="12">MEGHALAYA</text>
+  </g>
+
+  <!-- West Nodes -->
+  <g class="state-node" data-id="gujarat" transform="translate(220, 380)">
+    <circle r="7" filter="url(#nodeGlow)"/>
+    <text dx="-65" dy="4">GUJARAT</text>
+  </g>
+  <g class="state-node" data-id="dadra-and-nagar-haveli-daman-and-diu" transform="translate(250, 460)">
+    <circle r="4"/>
+    <text dx="-110" dy="-5">DAMAN &amp; DIU / DNH</text>
+  </g>
+  <g class="state-node" data-id="maharashtra" transform="translate(350, 500)">
+    <circle r="7" filter="url(#nodeGlow)"/>
+    <text dx="-95" dy="4">MAHARASHTRA</text>
+  </g>
+  <g class="state-node" data-id="goa" transform="translate(290, 600)">
+    <circle r="5" filter="url(#nodeGlow)"/>
+    <text dx="-35" dy="3">GOA</text>
+  </g>
+
+  <!-- South Nodes -->
+  <g class="state-node" data-id="telangana" transform="translate(420, 560)">
+    <circle r="6"/>
+    <text dx="10" dy="-5">TELANGANA</text>
+  </g>
+  <g class="state-node" data-id="andhra-pradesh" transform="translate(420, 630)">
+    <circle r="6"/>
+    <text dx="10" dy="3">ANDHRA PRADESH</text>
+  </g>
+  <g class="state-node" data-id="karnataka" transform="translate(340, 650)">
+    <circle r="7" filter="url(#nodeGlow)"/>
+    <text dx="-85" dy="3">KARNATAKA</text>
+  </g>
+  <g class="state-node" data-id="kerala" transform="translate(350, 780)">
+    <circle r="7" filter="url(#nodeGlow)"/>
+    <text dx="-60" dy="3">KERALA</text>
+  </g>
+  <g class="state-node" data-id="tamil-nadu" transform="translate(420, 760)">
+    <circle r="7" filter="url(#nodeGlow)"/>
+    <text dx="12" dy="3">TAMIL NADU</text>
+  </g>
+  <g class="state-node" data-id="puducherry" transform="translate(440, 710)">
+    <circle r="4"/>
+    <text dx="8" dy="3">PUDUCHERRY</text>
+  </g>
+  <g class="state-node" data-id="lakshadweep" transform="translate(240, 760)">
+    <circle r="5" stroke-dasharray="2 2"/>
+    <text dx="-90" dy="3">LAKSHADWEEP</text>
+  </g>
+  <g class="state-node" data-id="andaman-and-nicobar" transform="translate(720, 720)">
+    <circle r="5" stroke-dasharray="2 2"/>
+    <text dx="-65" dy="-10">ANDAMAN &amp; NICOBAR</text>
+  </g>
+</svg>

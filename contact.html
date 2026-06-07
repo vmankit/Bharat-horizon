@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Support Desk | Bharat Horizon</title>
+    <meta name="description" content="Reach out to the Bharat Horizon team. Send queries regarding partnerships, advertising, travel writing contributions, or report guide updates.">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header></header>
+
+    <main>
+        
+        <!-- Contact Banner -->
+        <section class="section-wrapper" style="padding: 60px 0; background: rgba(255,255,255,0.01); border-bottom: 1px solid rgba(255,255,255,0.03);">
+            <div class="container" style="text-align: center;">
+                <span style="font-size:0.85rem; background:rgba(212,175,55,0.15); color:var(--color-gold); padding:4px 12px; border-radius:30px; font-weight:700; text-transform:uppercase; letter-spacing:1px; display:inline-block; margin-bottom:15px;">
+                    Get In Touch
+                </span>
+                <h1 style="font-size: 3rem; margin-bottom: 15px; text-transform: uppercase;">Contact <span>Horizon Team</span></h1>
+                <p style="color: var(--color-text-muted); max-width: 700px; margin: 0 auto; font-size: 1.1rem;">Have questions about our travel itineraries, affiliate programs, or want to contribute a travel diary? Drop us a line below.</p>
+            </div>
+        </section>
+
+        <!-- Contact Content Grid -->
+        <section class="container contact-grid" style="padding: 60px 0;">
+            
+            <!-- Left Side: Form -->
+            <div class="glass-panel" style="padding:40px;">
+                <h3 style="font-size:1.4rem; color:var(--color-gold); margin-bottom:25px;">Send Us a Message</h3>
+                
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Message successfully sent! The Bharat Horizon team will contact you shortly.'); this.reset();">
+                    <div class="contact-form-row">
+                        <div class="form-group-generic">
+                            <label for="contact-name">Full Name</label>
+                            <input type="text" id="contact-name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group-generic">
+                            <label for="contact-email">Email Address</label>
+                            <input type="email" id="contact-email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group-generic">
+                        <label for="contact-subject">Subject</label>
+                        <input type="text" id="contact-subject" placeholder="Partnership, feedback, or contribution" required>
+                    </div>
+
+                    <div class="form-group-generic">
+                        <label for="contact-msg">Message</label>
+                        <textarea id="contact-msg" rows="6" placeholder="Write your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="margin-top:15px; width:fit-content;">Submit Message &rarr;</button>
+                </form>
+            </div>
+
+            <!-- Right Side: Info -->
+            <div style="display:flex; flex-direction:column; gap:30px;">
+                
+                <!-- Support info -->
+                <div class="sidebar-widget">
+                    <h3>Office Desk</h3>
+                            <div style="font-size:0.92rem; color:var(--color-text-muted); line-height:1.6; display:flex; flex-direction:column; gap:12px;">
+                            <div>
+                                <strong>📍 Head Office:</strong>
+                                <p style="margin-top:3px;">Office: Shubhash Nagar, Dehradun, 248002</p>
+                            </div>
+                            <div>
+                                <strong>✉ Contact Email:</strong>
+                                <p style="margin-top:3px; color:var(--color-gold);">ankitrajvm@gmail.com</p>
+                            </div>
+                            <div>
+                                <strong>📸 Instagram:</strong>
+                                <p style="margin-top:3px;"><a href="https://www.instagram.com/bharathorizon.travel/" target="_blank" rel="noopener noreferrer">@bharathorizon.travel</a></p>
+                            </div>
+                        </div>
+                </div>
+
+                <!-- Contributor card -->
+                <div class="sidebar-widget" style="background:radial-gradient(circle, rgba(212,175,55,0.05) 0%, rgba(5,10,24,0.1) 100%);">
+                    <h3>Submit Diaries</h3>
+                    <p style="font-size:0.9rem; color:var(--color-text-muted); line-height:1.5; margin-bottom:15px;">
+                        Are you a travel writer with offbeat recommendations for India? We pay standard industry rates for comprehensive guides.
+                    </p>
+                    <a href="mailto:writer@bharathorizon.com" class="gear-cta-link" style="text-align:center; display:block;">Contributor Portal</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer></footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
