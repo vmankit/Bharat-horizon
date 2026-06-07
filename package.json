@@ -1,0 +1,8 @@
+{
+  "name": "bharat-horizon",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "python compile_static.py"
+  }
+}
