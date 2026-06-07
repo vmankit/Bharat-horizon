@@ -102,8 +102,12 @@ function loadHeaderFooter() {
                             <span class="logo-text">Bharat Horizon</span>
                         </a>
                         <p>Discover India's soul. An aviation-inspired premium travel diary and destination guide, carefully highlighting regional wonders, culinary routes, and pristine hidden getaways across 36 states and union territories.</p>
+                        <div style="margin-top:12px; font-size:0.95rem; color:var(--color-text-muted);">
+                            <div>Office: Shubhash Nagar, Dehradun, 248002</div>
+                            <div style="margin-top:6px;">Email: <a href="mailto:ankitrajvm@gmail.com" style="color:var(--color-gold);">ankitrajvm@gmail.com</a></div>
+                        </div>
                         <div class="footer-socials">
-                            <a href="#" class="social-icon" aria-label="Facebook">
+                            <a href="https://www.instagram.com/bharathorizon.travel/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
                                 <svg viewBox="0 0 24 24"><path d="M17,2H14A5,5 0 0,0 9,7V10H6V14H9V22H13V14H16L17,10H13V7A1,1 0 0,1 14,6H17V2Z"/></svg>
                             </a>
                             <a href="#" class="social-icon" aria-label="Twitter">
@@ -241,13 +245,9 @@ async function initGlobalSearch() {
                         const linkDepth = window.location.pathname.includes("/states/") || window.location.pathname.includes("/destinations/") || window.location.pathname.includes("/blog/") ? "../../" : "";
                         window.location.href = `${linkDepth}state.html?id=${state.id}`;
                     });
-                                        <p>Discover India's soul. An aviation-inspired premium travel diary and destination guide, carefully highlighting regional wonders, culinary routes, and pristine hidden getaways across 36 states and union territories.</p>
-                                        <div style="margin-top:12px; font-size:0.95rem; color:var(--color-text-muted);">
-                                            <div>Office: Shubhash Nagar, Dehradun, 248002</div>
-                                            <div style="margin-top:6px;">Email: <a href="mailto:ankitrajvm@gmail.com" style="color:var(--color-gold);">ankitrajvm@gmail.com</a></div>
-                                        </div>
-                                        <div class="footer-socials">
-                                            <a href="https://www.instagram.com/bharathorizon.travel/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                    resultsContainer.appendChild(item);
+                });
+            }
             resultsContainer.classList.add("active");
         });
 

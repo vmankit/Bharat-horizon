@@ -1,242 +1,108 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" width="100%" height="100%" class="map-svg-element" id="india-constellation-map">
-  <!-- Map Defs for shadows and gradients -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 620" id="india-map-svg" style="width:100%;height:auto;">
   <defs>
-    <radialGradient id="mapBg" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" stop-color="#0b1736" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#050a18" stop-opacity="0.9"/>
-    </radialGradient>
-    <filter id="nodeGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
+    <filter id="state-shadow">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="rgba(0,0,0,0.2)"/>
     </filter>
   </defs>
+  <!-- NORTH REGION -->
+  <!-- Jammu & Kashmir (simplified polygon) -->
+  <polygon class="state-path north" data-id="jammu-kashmir" data-name="Jammu & Kashmir" data-region="North" data-desc="Heaven on Earth — Dal Lake, Gulmarg & Pahalgam" points="100,20 155,18 185,30 195,55 175,72 160,90 140,105 110,95 90,75 80,50" />
+  <!-- Ladakh UT -->
+  <polygon class="state-path north" data-id="ladakh" data-name="Ladakh" data-region="North" data-desc="Land of High Passes — Pangong, Nubra, Leh" points="185,18 240,15 260,35 255,70 220,80 195,72 175,55" />
+  <!-- Himachal Pradesh -->
+  <polygon class="state-path north" data-id="himachal-pradesh" data-name="Himachal Pradesh" data-region="North" data-desc="Dev Bhoomi — Manali, Shimla, Dharamshala" points="140,105 175,90 200,95 210,120 195,145 165,155 140,140 130,120" />
+  <!-- Punjab -->
+  <polygon class="state-path north" data-id="punjab" data-name="Punjab" data-region="North" data-desc="Land of Five Rivers — Amritsar, Chandigarh" points="100,100 130,95 140,105 130,120 140,140 120,152 100,145 88,125 90,110" />
+  <!-- Haryana -->
+  <polygon class="state-path north" data-id="haryana" data-name="Haryana" data-region="North" data-desc="Gateway to North India — Kurukshetra, Pinjore" points="130,140 165,130 180,150 175,170 160,180 140,185 120,175 115,158 120,148" />
+  <!-- Delhi UT -->
+  <ellipse class="state-path north" data-id="delhi" data-name="Delhi" data-region="North" data-desc="Capital — Qutub Minar, Red Fort, India Gate" cx="162" cy="178" rx="14" ry="11" />
+  <!-- Uttarakhand -->
+  <polygon class="state-path north" data-id="uttarakhand" data-name="Uttarakhand" data-region="North" data-desc="Dev Bhoomi — Rishikesh, Mussoorie, Char Dham" points="200,118 230,110 255,125 250,150 225,165 200,158 185,145 195,125" />
+  <!-- Uttar Pradesh -->
+  <polygon class="state-path north" data-id="uttar-pradesh" data-name="Uttar Pradesh" data-region="North" data-desc="Heartland — Agra, Varanasi, Lucknow" points="160,185 200,170 250,158 290,165 315,180 320,210 295,240 260,260 220,260 185,250 158,230 155,205" />
+  <!-- Rajasthan -->
+  <polygon class="state-path west" data-id="rajasthan" data-name="Rajasthan" data-region="West" data-desc="Desert Kingdom — Jaipur, Jaisalmer, Udaipur" points="80,148 115,155 120,180 155,205 158,240 130,265 95,285 60,268 40,240 35,205 45,175 65,162" />
+  <!-- Gujarat -->
+  <polygon class="state-path west" data-id="gujarat" data-name="Gujarat" data-region="West" data-desc="Vibrant West — Kutch, Somnath, Gir" points="40,240 60,268 80,278 80,305 60,325 40,340 20,335 10,310 15,280 28,258" />
+  <!-- Madhya Pradesh -->
+  <polygon class="state-path central" data-id="madhya-pradesh" data-name="Madhya Pradesh" data-region="Central" data-desc="Heart of India — Khajuraho, Sanchi, Bandhavgarh" points="160,245 185,250 220,260 265,262 305,260 322,280 315,310 285,330 250,338 210,335 175,320 152,298 148,270" />
+  <!-- Bihar -->
+  <polygon class="state-path east" data-id="bihar" data-name="Bihar" data-region="East" data-desc="Ancient Civilization — Bodh Gaya, Rajgir" points="295,200 330,195 365,200 375,225 360,250 330,258 305,255 290,235 290,215" />
+  <!-- Jharkhand -->
+  <polygon class="state-path east" data-id="jharkhand" data-name="Jharkhand" data-region="East" data-desc="Forest Treasure — Betla, Deoghar, Ranchi" points="305,258 330,255 365,255 380,270 378,295 360,312 330,315 308,305 300,282" />
+  <!-- West Bengal -->
+  <polygon class="state-path east" data-id="west-bengal" data-name="West Bengal" data-region="East" data-desc="Cultural Capital — Kolkata, Darjeeling, Sundarbans" points="365,200 400,195 415,215 410,250 400,280 385,305 375,330 360,315 378,295 378,270 380,250 365,250 370,225" />
+  <!-- Sikkim -->
+  <polygon class="state-path northeast" data-id="sikkim" data-name="Sikkim" data-region="Northeast" data-desc="Himalayan Gem — Gangtok, Tsomgo Lake" points="400,185 415,182 420,200 415,212 400,210" />
+  <!-- Arunachal Pradesh -->
+  <polygon class="state-path northeast" data-id="arunachal-pradesh" data-name="Arunachal Pradesh" data-region="Northeast" data-desc="Rising Sun — Tawang, Ziro, Bomdila" points="420,175 480,165 500,180 498,200 470,215 440,220 420,215 415,198" />
+  <!-- Assam -->
+  <polygon class="state-path northeast" data-id="assam" data-name="Assam" data-region="Northeast" data-desc="Gateway NE — Kaziranga, Brahmaputra, Majuli" points="415,215 440,215 470,215 495,225 490,248 460,255 430,258 415,245 410,230" />
+  <!-- Nagaland -->
+  <polygon class="state-path northeast" data-id="nagaland" data-name="Nagaland" data-region="Northeast" data-desc="Hornbill Land — Kohima, Dzukou Valley" points="470,250 495,245 500,262 490,280 468,280 462,265" />
+  <!-- Manipur -->
+  <polygon class="state-path northeast" data-id="manipur" data-name="Manipur" data-region="Northeast" data-desc="Jewel of India — Loktak Lake, Imphal" points="460,280 490,278 495,300 480,315 460,312 450,298" />
+  <!-- Mizoram -->
+  <polygon class="state-path northeast" data-id="mizoram" data-name="Mizoram" data-region="Northeast" data-desc="Land of Blues — Aizawl, Phawngpui" points="445,312 460,310 480,315 478,335 460,345 442,338 440,320" />
+  <!-- Tripura -->
+  <polygon class="state-path northeast" data-id="tripura" data-name="Tripura" data-region="Northeast" data-desc="Royal Heritage — Agartala, Ujjayanta Palace" points="420,290 440,288 448,308 445,322 428,325 418,310" />
+  <!-- Meghalaya -->
+  <polygon class="state-path northeast" data-id="meghalaya" data-name="Meghalaya" data-region="Northeast" data-desc="Abode of Clouds — Shillong, Cherrapunji" points="415,255 430,252 458,255 458,268 445,278 420,278 412,268" />
+  <!-- Odisha -->
+  <polygon class="state-path east" data-id="odisha" data-name="Odisha" data-region="East" data-desc="Temple State — Puri, Konark, Bhubaneswar" points="312,310 340,315 375,332 382,358 370,385 345,398 315,390 295,368 295,340 305,320" />
+  <!-- Chhattisgarh -->
+  <polygon class="state-path central" data-id="chhattisgarh" data-name="Chhattisgarh" data-region="Central" data-desc="Forest Rich — Bastar, Chitrakote, Tirathgarh" points="250,338 288,332 312,342 318,370 308,398 282,410 252,408 228,390 225,358 240,340" />
+  <!-- Maharashtra -->
+  <polygon class="state-path west" data-id="maharashtra" data-name="Maharashtra" data-region="West" data-desc="Financial Capital — Mumbai, Ajanta, Lonavala" points="135,305 160,298 185,310 215,318 228,340 225,370 210,392 185,408 155,412 128,398 105,372 100,345 112,320" />
+  <!-- Goa -->
+  <polygon class="state-path west" data-id="goa" data-name="Goa" data-region="West" data-desc="Beach Paradise — Calangute, Old Goa Basilica" points="130,412 150,408 162,422 155,435 135,438 125,425" />
+  <!-- Karnataka -->
+  <polygon class="state-path south" data-id="karnataka" data-name="Karnataka" data-region="South" data-desc="IT Hub & Heritage — Bangalore, Mysore, Coorg" points="130,440 155,438 185,445 215,455 235,480 230,510 210,530 180,538 155,530 130,515 110,495 105,468 115,450" />
+  <!-- Andhra Pradesh -->
+  <polygon class="state-path south" data-id="andhra-pradesh" data-name="Andhra Pradesh" data-region="South" data-desc="Land of Spices — Tirupati, Visakhapatnam" points="230,415 265,405 300,410 325,430 330,458 320,485 300,500 268,510 238,505 218,488 215,462 220,440" />
+  <!-- Telangana -->
+  <polygon class="state-path south" data-id="telangana" data-name="Telangana" data-region="South" data-desc="Cyber City — Hyderabad, Warangal, Nagarjunasagar" points="215,392 248,392 278,395 302,408 300,435 275,448 248,450 222,442 215,420" />
+  <!-- Tamil Nadu -->
+  <polygon class="state-path south" data-id="tamil-nadu" data-name="Tamil Nadu" data-region="South" data-desc="Temple Grandeur — Chennai, Ooty, Madurai" points="218,510 248,505 280,512 305,530 310,560 295,585 268,600 240,602 215,585 200,560 202,535" />
+  <!-- Kerala -->
+  <polygon class="state-path south" data-id="kerala" data-name="Kerala" data-region="South" data-desc="God's Own Country — Backwaters, Munnar, Fort Kochi" points="180,540 210,535 215,562 210,590 195,608 175,612 162,598 165,575 170,555" />
+  <!-- Union Territories small -->
+  <!-- Chandigarh (city UT) -->
+  <circle class="state-path north" data-id="chandigarh" data-name="Chandigarh" data-region="North" data-desc="City Beautiful — Rock Garden, Sukhna Lake" cx="150" cy="130" r="7" />
+  <!-- Puducherry -->
+  <circle class="state-path south" data-id="puducherry" data-name="Puducherry" data-region="South" data-desc="French Riviera of India — Promenade, Auroville" cx="255" cy="553" r="7" />
+  <!-- D&N Haveli and D&D (combined) -->
+  <circle class="state-path west" data-id="dadra-nagar-haveli" data-name="Dadra & Nagar Haveli" data-region="West" data-desc="Tribal Land — Silvassa, Vanganga Lake" cx="90" cy="335" r="7" />
+  <!-- Lakshadweep -->
+  <circle class="state-path south" data-id="lakshadweep" data-name="Lakshadweep" data-region="South" data-desc="Coral Islands — Bangaram, Agatti" cx="132" cy="570" r="7" />
+  <!-- A&N Islands (bottom right) -->
+  <ellipse class="state-path east" data-id="andaman-nicobar" data-name="Andaman & Nicobar" data-region="East" data-desc="Island Getaway — Port Blair, Radhanagar Beach" cx="380" cy="560" rx="12" ry="30" />
 
-  <!-- Stylized Border Outline of India (Simplified representation for premium aviation design) -->
-  <path d="M 390 70 
-           L 410 90 L 420 130 L 460 170 L 480 190 L 520 220 
-           L 570 230 L 610 240 L 630 250 L 710 250 L 780 230
-           L 790 280 L 770 310 L 780 340 L 750 380 L 700 370
-           L 660 390 L 670 430 L 610 420 L 570 470 L 530 520
-           L 490 560 L 440 680 L 430 770 L 410 820 L 400 830
-           L 380 810 L 360 760 L 330 690 L 330 640 L 290 600
-           L 290 550 L 250 510 L 230 450 L 180 430 L 190 380
-           L 220 370 L 230 320 L 250 270 L 280 240 L 330 230
-           L 350 160 Z" 
-        fill="url(#mapBg)" 
-        stroke="#d4af37" 
-        stroke-opacity="0.08" 
-        stroke-width="2" 
-        stroke-dasharray="10 5" />
-
-  <!-- Constellation Regional Connection Lines (Flight paths linking capital hubs) -->
-  <!-- North Region Connections -->
-  <line x1="400" y1="215" x2="360" y2="110" class="map-connection-line" /> <!-- Delhi - JK -->
-  <line x1="400" y1="215" x2="400" y2="100" class="map-connection-line" /> <!-- Delhi - Ladakh -->
-  <line x1="400" y1="215" x2="420" y2="150" class="map-connection-line" /> <!-- Delhi - Himachal -->
-  <line x1="400" y1="215" x2="450" y2="180" class="map-connection-line" /> <!-- Delhi - Uttarakhand -->
-  <line x1="400" y1="215" x2="280" y2="280" class="map-connection-line" /> <!-- Delhi - Rajasthan -->
-  <line x1="400" y1="215" x2="480" y2="280" class="map-connection-line" /> <!-- Delhi - UP -->
-  <line x1="400" y1="215" x2="360" y2="170" class="map-connection-line" /> <!-- Delhi - Punjab -->
-  <line x1="400" y1="215" x2="380" y2="200" class="map-connection-line" /> <!-- Delhi - Haryana -->
-  <line x1="360" y1="170" x2="380" y2="175" class="map-connection-line" /> <!-- Punjab - Chandigarh -->
-
-  <!-- West / Central Connections -->
-  <line x1="280" y1="280" x2="220" y2="380" class="map-connection-line" /> <!-- Rajasthan - Gujarat -->
-  <line x1="220" y1="380" x2="420" y2="390" class="map-connection-line" /> <!-- Gujarat - MP -->
-  <line x1="420" y1="390" x2="480" y2="280" class="map-connection-line" /> <!-- MP - UP -->
-  <line x1="420" y1="390" x2="350" y2="500" class="map-connection-line" /> <!-- MP - Maharashtra -->
-  <line x1="350" y1="500" x2="290" y2="600" class="map-connection-line" /> <!-- Maharashtra - Goa -->
-  <line x1="350" y1="500" x2="250" y2="460" class="map-connection-line" /> <!-- Maharashtra - Daman/Diu -->
-
-  <!-- East / North East Connections -->
-  <line x1="480" y1="280" x2="600" y2="310" class="map-connection-line" /> <!-- UP - Bihar -->
-  <line x1="600" y1="310" x2="590" y2="370" class="map-connection-line" /> <!-- Bihar - JH -->
-  <line x1="600" y1="310" x2="630" y2="260" class="map-connection-line" /> <!-- Bihar - Sikkim -->
-  <line x1="590" y1="370" x2="670" y2="390" class="map-connection-line" /> <!-- JH - WB -->
-  <line x1="670" y1="390" x2="560" y2="450" class="map-connection-line" /> <!-- WB - Odisha -->
-  <line x1="560" y1="450" x2="500" y2="440" class="map-connection-line" /> <!-- Odisha - CG -->
-  <line x1="500" y1="440" x2="420" y2="390" class="map-connection-line" /> <!-- CG - MP -->
-  
-  <!-- NE Spine -->
-  <line x1="670" y1="390" x2="730" y2="280" class="map-connection-line" /> <!-- WB - Assam -->
-  <line x1="730" y1="280" x2="780" y2="240" class="map-connection-line" /> <!-- Assam - Arunachal -->
-  <line x1="730" y1="280" x2="790" y2="290" class="map-connection-line" /> <!-- Assam - Nagaland -->
-  <line x1="730" y1="280" x2="780" y2="320" class="map-connection-line" /> <!-- Assam - Manipur -->
-  <line x1="730" y1="280" x2="760" y2="360" class="map-connection-line" /> <!-- Assam - Mizoram -->
-  <line x1="730" y1="280" x2="730" y2="350" class="map-connection-line" /> <!-- Assam - Tripura -->
-  <line x1="730" y1="280" x2="710" y2="300" class="map-connection-line" /> <!-- Assam - Meghalaya -->
-
-  <!-- South Connections -->
-  <line x1="350" y1="500" x2="420" y2="560" class="map-connection-line" /> <!-- Maharashtra - Telangana -->
-  <line x1="420" y1="560" x2="420" y2="630" class="map-connection-line" /> <!-- Telangana - AP -->
-  <line x1="350" y1="500" x2="340" y2="650" class="map-connection-line" /> <!-- Maharashtra - Karnataka -->
-  <line x1="340" y1="650" x2="290" y2="600" class="map-connection-line" /> <!-- Karnataka - Goa -->
-  <line x1="340" y1="650" x2="420" y2="630" class="map-connection-line" /> <!-- Karnataka - AP -->
-  <line x1="340" y1="650" x2="350" y2="780" class="map-connection-line" /> <!-- Karnataka - Kerala -->
-  <line x1="340" y1="650" x2="420" y2="760" class="map-connection-line" /> <!-- Karnataka - TN -->
-  <line x1="350" y1="780" x2="420" y2="760" class="map-connection-line" /> <!-- Kerala - TN -->
-  <line x1="420" y1="760" x2="440" y2="710" class="map-connection-line" /> <!-- TN - Puducherry -->
-  <line x1="350" y1="780" x2="240" y2="760" class="map-connection-line" stroke-dasharray="2 6" /> <!-- Kerala - Lakshadweep -->
-  <line x1="420" y1="760" x2="720" y2="720" class="map-connection-line" stroke-dasharray="2 6" /> <!-- TN - Andaman -->
-
-  <!-- ================= STATE/UT INTERACTIVE NODES ================= -->
-  
-  <!-- North Nodes -->
-  <g class="state-node" data-id="delhi" transform="translate(400, 215)">
-    <circle r="6" filter="url(#nodeGlow)"/>
-    <text dx="10" dy="3">DELHI</text>
-  </g>
-  <g class="state-node" data-id="jammu-and-kashmir" transform="translate(360, 110)">
-    <circle r="6" filter="url(#nodeGlow)"/>
-    <text dx="10" dy="3">JAMMU &amp; KASHMIR</text>
-  </g>
-  <g class="state-node" data-id="ladakh" transform="translate(400, 100)">
-    <circle r="6" filter="url(#nodeGlow)"/>
-    <text dx="10" dy="3">LADAKH</text>
-  </g>
-  <g class="state-node" data-id="himachal-pradesh" transform="translate(420, 150)">
-    <circle r="6"/>
-    <text dx="10" dy="3">HIMACHAL PRADESH</text>
-  </g>
-  <g class="state-node" data-id="uttarakhand" transform="translate(450, 180)">
-    <circle r="6"/>
-    <text dx="10" dy="3">UTTARAKHAND</text>
-  </g>
-  <g class="state-node" data-id="punjab" transform="translate(360, 170)">
-    <circle r="6"/>
-    <text dx="-55" dy="3">PUNJAB</text>
-  </g>
-  <g class="state-node" data-id="chandigarh" transform="translate(380, 175)">
-    <circle r="4"/>
-    <text dx="8" dy="-5">CHANDIGARH</text>
-  </g>
-  <g class="state-node" data-id="haryana" transform="translate(380, 200)">
-    <circle r="6"/>
-    <text dx="-60" dy="3">HARYANA</text>
-  </g>
-  <g class="state-node" data-id="rajasthan" transform="translate(280, 280)">
-    <circle r="7" filter="url(#nodeGlow)"/>
-    <text dx="-80" dy="4">RAJASTHAN</text>
-  </g>
-  <g class="state-node" data-id="uttar-pradesh" transform="translate(480, 280)">
-    <circle r="7" filter="url(#nodeGlow)"/>
-    <text dx="10" dy="3">UTTAR PRADESH</text>
-  </g>
-
-  <!-- Central Nodes -->
-  <g class="state-node" data-id="madhya-pradesh" transform="translate(420, 390)">
-    <circle r="7" filter="url(#nodeGlow)"/>
-    <text dx="-50" dy="-10">MADHYA PRADESH</text>
-  </g>
-  <g class="state-node" data-id="chhattisgarh" transform="translate(500, 440)">
-    <circle r="6"/>
-    <text dx="10" dy="3">CHHATTISGARH</text>
-  </g>
-
-  <!-- East Nodes -->
-  <g class="state-node" data-id="bihar" transform="translate(600, 310)">
-    <circle r="6"/>
-    <text dx="10" dy="-5">BIHAR</text>
-  </g>
-  <g class="state-node" data-id="jharkhand" transform="translate(590, 370)">
-    <circle r="6"/>
-    <text dx="-75" dy="3">JHARKHAND</text>
-  </g>
-  <g class="state-node" data-id="west-bengal" transform="translate(670, 390)">
-    <circle r="6" filter="url(#nodeGlow)"/>
-    <text dx="10" dy="3">WEST BENGAL</text>
-  </g>
-  <g class="state-node" data-id="odisha" transform="translate(560, 450)">
-    <circle r="6"/>
-    <text dx="10" dy="12">ODISHA</text>
-  </g>
-
-  <!-- North East Nodes -->
-  <g class="state-node" data-id="sikkim" transform="translate(630, 260)">
-    <circle r="5"/>
-    <text dx="-45" dy="-8">SIKKIM</text>
-  </g>
-  <g class="state-node" data-id="assam" transform="translate(730, 280)">
-    <circle r="6" filter="url(#nodeGlow)"/>
-    <text dx="-30" dy="-8">ASSAM</text>
-  </g>
-  <g class="state-node" data-id="arunachal-pradesh" transform="translate(780, 240)">
-    <circle r="6"/>
-    <text dx="-60" dy="-10">ARUNACHAL</text>
-  </g>
-  <g class="state-node" data-id="nagaland" transform="translate(790, 290)">
-    <circle r="5"/>
-    <text dx="8" dy="3">NAGALAND</text>
-  </g>
-  <g class="state-node" data-id="manipur" transform="translate(780, 320)">
-    <circle r="5"/>
-    <text dx="8" dy="3">MANIPUR</text>
-  </g>
-  <g class="state-node" data-id="mizoram" transform="translate(760, 360)">
-    <circle r="5"/>
-    <text dx="8" dy="3">MIZORAM</text>
-  </g>
-  <g class="state-node" data-id="tripura" transform="translate(730, 350)">
-    <circle r="5"/>
-    <text dx="-55" dy="10">TRIPURA</text>
-  </g>
-  <g class="state-node" data-id="meghalaya" transform="translate(710, 300)">
-    <circle r="5"/>
-    <text dx="-75" dy="12">MEGHALAYA</text>
-  </g>
-
-  <!-- West Nodes -->
-  <g class="state-node" data-id="gujarat" transform="translate(220, 380)">
-    <circle r="7" filter="url(#nodeGlow)"/>
-    <text dx="-65" dy="4">GUJARAT</text>
-  </g>
-  <g class="state-node" data-id="dadra-and-nagar-haveli-daman-and-diu" transform="translate(250, 460)">
-    <circle r="4"/>
-    <text dx="-110" dy="-5">DAMAN &amp; DIU / DNH</text>
-  </g>
-  <g class="state-node" data-id="maharashtra" transform="translate(350, 500)">
-    <circle r="7" filter="url(#nodeGlow)"/>
-    <text dx="-95" dy="4">MAHARASHTRA</text>
-  </g>
-  <g class="state-node" data-id="goa" transform="translate(290, 600)">
-    <circle r="5" filter="url(#nodeGlow)"/>
-    <text dx="-35" dy="3">GOA</text>
-  </g>
-
-  <!-- South Nodes -->
-  <g class="state-node" data-id="telangana" transform="translate(420, 560)">
-    <circle r="6"/>
-    <text dx="10" dy="-5">TELANGANA</text>
-  </g>
-  <g class="state-node" data-id="andhra-pradesh" transform="translate(420, 630)">
-    <circle r="6"/>
-    <text dx="10" dy="3">ANDHRA PRADESH</text>
-  </g>
-  <g class="state-node" data-id="karnataka" transform="translate(340, 650)">
-    <circle r="7" filter="url(#nodeGlow)"/>
-    <text dx="-85" dy="3">KARNATAKA</text>
-  </g>
-  <g class="state-node" data-id="kerala" transform="translate(350, 780)">
-    <circle r="7" filter="url(#nodeGlow)"/>
-    <text dx="-60" dy="3">KERALA</text>
-  </g>
-  <g class="state-node" data-id="tamil-nadu" transform="translate(420, 760)">
-    <circle r="7" filter="url(#nodeGlow)"/>
-    <text dx="12" dy="3">TAMIL NADU</text>
-  </g>
-  <g class="state-node" data-id="puducherry" transform="translate(440, 710)">
-    <circle r="4"/>
-    <text dx="8" dy="3">PUDUCHERRY</text>
-  </g>
-  <g class="state-node" data-id="lakshadweep" transform="translate(240, 760)">
-    <circle r="5" stroke-dasharray="2 2"/>
-    <text dx="-90" dy="3">LAKSHADWEEP</text>
-  </g>
-  <g class="state-node" data-id="andaman-and-nicobar" transform="translate(720, 720)">
-    <circle r="5" stroke-dasharray="2 2"/>
-    <text dx="-65" dy="-10">ANDAMAN &amp; NICOBAR</text>
-  </g>
+  <!-- State name labels — key/visible ones -->
+  <text class="map-label" x="155" y="140" font-size="6.5" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">HP</text>
+  <text class="map-label" x="104" y="130" font-size="6" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">PB</text>
+  <text class="map-label" x="152" y="175" font-size="5.5" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">HR</text>
+  <text class="map-label" x="163" y="183" font-size="5" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">DL</text>
+  <text class="map-label" x="222" y="140" font-size="6" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">UK</text>
+  <text class="map-label" x="235" y="215" font-size="7.5" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">UP</text>
+  <text class="map-label" x="88" y="218" font-size="7" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">RJ</text>
+  <text class="map-label" x="46" y="302" font-size="7" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">GJ</text>
+  <text class="map-label" x="235" y="298" font-size="7.5" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">MP</text>
+  <text class="map-label" x="335" y="222" font-size="6.5" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">BR</text>
+  <text class="map-label" x="338" y="285" font-size="6.5" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">JH</text>
+  <text class="map-label" x="392" y="248" font-size="6.5" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">WB</text>
+  <text class="map-label" x="340" y="357" font-size="6.5" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">OD</text>
+  <text class="map-label" x="270" y="378" font-size="6.5" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">CG</text>
+  <text class="map-label" x="165" y="360" font-size="7" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">MH</text>
+  <text class="map-label" x="271" y="425" font-size="6.5" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">TS</text>
+  <text class="map-label" x="175" y="490" font-size="7" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">KA</text>
+  <text class="map-label" x="278" y="463" font-size="6.5" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">AP</text>
+  <text class="map-label" x="255" y="558" font-size="7" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">TN</text>
+  <text class="map-label" x="185" y="578" font-size="6.5" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">KL</text>
+  <text class="map-label" x="459" y="195" font-size="6" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">AR</text>
+  <text class="map-label" x="455" y="238" font-size="5.5" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">AS</text>
+  <text class="map-label" x="130" y="50" font-size="6.5" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">J&K</text>
+  <text class="map-label" x="222" y="50" font-size="6.5" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">LA</text>
+  <text class="map-label" x="143" y="428" font-size="6" fill="#374151" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">GA</text>
 </svg>
